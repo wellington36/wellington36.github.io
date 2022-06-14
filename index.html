@@ -168,8 +168,14 @@
 <ul>
 <li><a href="#aula-8-neural-networks---part-i">Aula 8 (Neural Networks -
 Part I)</a></li>
-<li><a href="#aula-9-neural-networks---part-ii">Aula 9 (Neural Networks
+<li><a href="#aula-8-neural-networks---part-ii">Aula 8 (Neural Networks
 - Part II)</a></li>
+<li><a href="#aula-8-neural-networks---part-iii">Aula 8 (Neural Networks
+- Part III)</a>
+<ul>
+<li><a href="#aula-9-clustering---part-i">Aula 9 (Clustering - Part
+I)</a></li>
+</ul></li>
 </ul>
 </nav>
 <h2 id="aula-8-neural-networks---part-i">Aula 8 (Neural Networks - Part
@@ -201,7 +207,7 @@ w_{k 0}^{(2)} \]</span></p>
 <ol start="4" type="1">
 <li>E repetimos o processo …</li>
 </ol>
-<h2 id="aula-9-neural-networks---part-ii">Aula 9 (Neural Networks - Part
+<h2 id="aula-8-neural-networks---part-ii">Aula 8 (Neural Networks - Part
 II)</h2>
 <h4 id="funções-de-erro">Funções de erro</h4>
 <p>Sendo</p>
@@ -262,9 +268,73 @@ E_n(\textbf{w}^{(t)})\]</span></p>
 <p>Onde l é o learning rate, o que faz uma atualização com base em um
 ponto de dados por vez.</p>
 <h4
-id="backpropagation-metodo-eficiente-de-calculo-de-derivadas">Backpropagation:
-metodo eficiente de calculo de derivadas</h4>
+id="backpropagation-método-eficiente-de-cálculo-de-derivadas-para-o-gradiente-descendente.">Backpropagation:
+método eficiente de cálculo de derivadas para o gradiente
+descendente.</h4>
 <p><span class="math display">\[\delta_j = \frac{\partial E_n}{\partial
 a_j} = h&#39;(a_j) \sum_k w_{k j} (y_k = t_k)\]</span></p>
+<h2 id="aula-8-neural-networks---part-iii">Aula 8 (Neural Networks -
+Part III)</h2>
+<h4 id="error-backpropagation-algoritmo-de-propagação-de-erro.">Error
+Backpropagation: algoritmo de propagação de erro.</h4>
+<p>O Error Backpropagation fornece uma maneira de treinar redes com
+qualquer número de unidades ocultas dispostas em qualquer número de
+camadas, seguindo os seguintes passos</p>
+<ol type="1">
+<li><p>Aplique um vetor <span class="math inline">\(x_n\)</span> para a
+rede e propage atraves dela;</p></li>
+<li><p>Avalie o <span class="math inline">\(\delta_k\)</span> para todas
+as unidades de output;</p></li>
+<li><p>Use a formula de brackpropagation para propagar os <span
+class="math inline">\(\delta\)</span>’s e obter <span
+class="math inline">\(\delta_j\)</span> para as camadas
+ocultas;</p></li>
+<li><p>As derivadas requeridas são dadas por <span
+class="math inline">\(\delta_j z_i\)</span>, onde <span
+class="math inline">\(z_i\)</span> é o i-ésimo input para o nó
+j.</p></li>
+</ol>
+<h4 id="regularization">Regularization</h4>
+<p>Evitar overfitting do modelo, ou seja, saber escolher a quantidade de
+parametros do modelo (detalher clique <a
+href="https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a">aqui</a>),
+um regularizador simples é o quadratico, dado por</p>
+<p><span class="math display">\[\widetilde{E}(\textbf{w}) =
+E(\textbf{w}) + \frac{\lambda}{2} \textbf{w}^T \textbf{w}\]</span></p>
+<h3 id="aula-9-clustering---part-i">Aula 9 (Clustering - Part I)</h3>
+<p>Clustering é agrupar coisas que ``andam juntas’’.</p>
+<h4 id="clustering-methods-métodos-de-agrupamento">Clustering Methods
+(Métodos de agrupamento)</h4>
+<ul>
+<li><p><span class="math inline">\(\textbf{Statistical}\)</span>: assume
+que os dados são gerados por um certo modelo probabilistico.</p></li>
+<li><p><span class="math inline">\(\textbf{Pairwise}\)</span>: defini-se
+uma função de similaridade entre os dados (distancia por exemplo) e
+então formula um críterio de otimalidade que o agrupamento deve
+otimizar.</p></li>
+</ul>
+<h4 id="algoritmos-de-clustering">Algoritmos de Clustering</h4>
+<ul>
+<li><span class="math inline">\(\textbf{Connected Components
+Analysis}\)</span>:</li>
+</ul>
+<p>Sendo os dados um grafo ponderado (da forma
+<code>Pairwise</code>)</p>
+<ol type="1">
+<li><p>Selecionamos um limite t;</p></li>
+<li><p>Apagamos todas as arestas cujo limite é maior que t;</p></li>
+<li><p>As partes do grafo que ainda estão conectadas são os clusters,
+pois são os dados mais próximos.</p></li>
+</ol>
+<ul>
+<li><span class="math inline">\(\textbf{K-Means
+clustering}\)</span>:</li>
+</ul>
+<ol type="1">
+<li><p>Seleciona K pontos de dados como centroides iniciais;</p></li>
+<li><p>Atribui a cada ponto o seu centroide mais proximo;</p></li>
+<li><p>Recalcula o centroide de cada cluster formado;</p></li>
+<li><p>Repete (2) e (3) até convergir.</p></li>
+</ol>
 </body>
 </html>
