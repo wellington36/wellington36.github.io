@@ -1,3 +1,9 @@
+<head>
+<script type="text/javascript"
+  src="https://www.maths.nottingham.ac.uk/plp/pmadw/LaTeXMathML.js">
+</script>
+</head>
+
 ## Aula 8 (Neural Networks - Part I)
 #### Linear models para regressão e classificação, são da forma
 $$ y(\textbf{x}, \textbf{w}) = f \left( \sum_{j = 1}^{M-1} w_j \phi_j (\textbf{x}) \right) $$
