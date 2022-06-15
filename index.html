@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Resumo TACD</title>
+  <title>Resumo TACD - A2</title>
   <style>
     html {
       line-height: 1.5;
@@ -162,7 +162,7 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Resumo TACD</h1>
+<h1 class="title">Resumo TACD - A2</h1>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
@@ -176,6 +176,10 @@ III</a></li>
 <li><a href="#clustering---part-ii">Clustering - Part II</a></li>
 <li><a href="#clustering---part-iii">Clustering - Part III</a></li>
 <li><a href="#decision-trees---part-i">Decision Trees - Part I</a></li>
+<li><a href="#decision-trees---part-ii">Decision Trees - Part
+II</a></li>
+<li><a href="#introduction-to-random-forest">Introduction to Random
+Forest</a></li>
 </ul>
 </nav>
 <h2 id="neural-networks---part-i">Neural Networks - Part I</h2>
@@ -374,5 +378,27 @@ erro</li>
 </ol>
 <p><span class="math display">\[\sum_{j=1}^J \sum_{i \in R_j} (y_i -
 \hat{y}_{R_j})^2\]</span></p>
+<ol start="2" type="1">
+<li>Para cada dado na região <span class="math inline">\(R_j\)</span>,
+faça a mesma previsão, ou seja, tome todos os dados de <span
+class="math inline">\(R_j\)</span> como iguais, atribuindo por exemplo,
+a média dos valores resposta para as observações na região <span
+class="math inline">\(R_j\)</span>.</li>
+</ol>
+<h2 id="decision-trees---part-ii">Decision Trees - Part II</h2>
+<p>A questão é como sabemos que chegamos numa boa arvore? Um método para
+encontrar é fazer a maior árvore possivel (esperado que possa ter um
+dado em cada folha, ou seja, um dado em cada cluster), e depois Pruning
+(podar a árvore) removendo folhas da arvore e considerando o nó a baixo
+como a nova folha se essa poda melhorar o desempenho do modelo.</p>
+<p>Também podemos apenas interromper o crescimento da árvore que é
+computacionalmente mais barato, porém, o método de crescer e depois
+podar aproveita melhor os dados, então é mais preferivel.</p>
+<h2 id="introduction-to-random-forest">Introduction to Random
+Forest</h2>
+<p>O algoritmo irá criar varias árvores de decisão, de maneira
+aleatória, formando uma floresta, onde cada árvore será utilizada na
+escolha do resultado final pela função de erro. Esse é um dos melhores
+algoritmos de aprendizagem.</p>
 </body>
 </html>
