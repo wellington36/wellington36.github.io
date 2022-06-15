@@ -264,7 +264,7 @@ gradient}\)</span></li>
 <p><span class="math display">\[E(\textbf{w}) = \sum_{n = 1}^N E_n
 (\textbf{w})\]</span></p>
 <p>onde <span class="math inline">\(E_n (\textbf{w})\)</span>, é o erro
-dado n, então</p>
+do dado n, então</p>
 <p><span class="math display">\[w^{(t+1)} = w^{(t)} - l \nabla
 E_n(\textbf{w}^{(t)})\]</span></p>
 <p>Onde l é o learning rate, o que faz uma atualização com base em um
@@ -274,7 +274,7 @@ id="backpropagation-método-eficiente-de-cálculo-de-derivadas-para-o-gradiente-
 método eficiente de cálculo de derivadas para o gradiente
 descendente.</h4>
 <p><span class="math display">\[\delta_j = \frac{\partial E_n}{\partial
-a_j} = h&#39;(a_j) \sum_k w_{k j} (y_k = t_k)\]</span></p>
+a_j} = h&#39;(a_j) \sum_k w_{k j} (y_k - t_k)\]</span></p>
 <h2 id="neural-networks---part-iii">Neural Networks - Part III</h2>
 <h4 id="error-backpropagation-algoritmo-de-propagação-de-erro.">Error
 Backpropagation: algoritmo de propagação de erro.</h4>
@@ -303,7 +303,7 @@ um regularizador simples é o quadratico, dado por</p>
 <p><span class="math display">\[\widetilde{E}(\textbf{w}) =
 E(\textbf{w}) + \frac{\lambda}{2} \textbf{w}^T \textbf{w}\]</span></p>
 <h2 id="clustering---part-i">Clustering - Part I</h2>
-<p>Clustering é agrupar coisas que ``andam juntas’’.</p>
+<p>Clustering é agrupar coisas que ‘’andam juntas’’.</p>
 <h4 id="clustering-methods-métodos-de-agrupamento">Clustering Methods
 (Métodos de agrupamento)</h4>
 <ul>
@@ -350,7 +350,7 @@ cluster;</p></li>
 </ol>
 <h2 id="clustering---part-iii">Clustering - Part III</h2>
 <ul>
-<li><span class="math inline">\(\textbf{ClusterONE}\)</span> Tem como
+<li><span class="math inline">\(\textbf{ClusterONE}\)</span>: Tem como
 caracteristicas usar os pesos da rede, criar clusters sobrepostos e a
 velocidade do algoritmo.</li>
 </ul>
