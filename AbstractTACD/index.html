@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Resumo TACD - A2</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Resumo TACD - A2</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#neural-networks---part-i">Neural Networks - Part
+I</a></li>
+<li><a href="#neural-networks---part-ii">Neural Networks - Part
+II</a></li>
+<li><a href="#neural-networks---part-iii">Neural Networks - Part
+III</a></li>
+<li><a href="#clustering---part-i">Clustering - Part I</a></li>
+<li><a href="#clustering---part-ii">Clustering - Part II</a></li>
+<li><a href="#clustering---part-iii">Clustering - Part III</a></li>
+<li><a href="#decision-trees---part-i">Decision Trees - Part I</a></li>
+<li><a href="#decision-trees---part-ii">Decision Trees - Part
+II</a></li>
+<li><a href="#introduction-to-random-forest">Introduction to Random
+Forest</a></li>
+</ul>
+</nav>
+<h2 id="neural-networks---part-i">Neural Networks - Part I</h2>
+<h4
+id="linear-models-para-regressão-e-classificação-são-da-forma">Linear
+models para regressão e classificação, são da forma</h4>
+<p><span class="math display">\[ y(\textbf{x}, \textbf{w}) = f \left(
+\sum_{j = 1}^{M-1} w_j \phi_j (\textbf{x}) \right) \]</span></p>
+<h4 id="neural-networks-seguem-os-seguintes-passos">Neural Networks,
+seguem os seguintes passos:</h4>
+<ol type="1">
+<li>Dado um conjunto m de vetores de dados de entrada <span
+class="math inline">\(\textbf{x} = x_1, \ldots, x_n\)</span>,
+construimos uma combinação linear da forma</li>
+</ol>
+<p><span class="math display">\[ a_j = \sum_{i=1}^n w_{ji}^{(1)} x_i +
+w_{j 0}^{(1)} \]</span></p>
+<ol start="2" type="1">
+<li>Cada combinação passa por uma função de ativação diferenciavel
+h</li>
+</ol>
+<p><span class="math display">\[z_j = h(a_j)\]</span></p>
+<ol start="3" type="1">
+<li>Refazemos o processo de 1 tomando z como o novo x</li>
+</ol>
+<p><span class="math display">\[ a_k = \sum_{j=1}^m w_{kj}^{(2)} z_j +
+w_{k 0}^{(2)} \]</span></p>
+<ol start="4" type="1">
+<li>E repetimos o processo …</li>
+</ol>
+<h2 id="neural-networks---part-ii">Neural Networks - Part II</h2>
+<h4 id="funções-de-erro">Funções de erro</h4>
+<p>Sendo</p>
+<p><span class="math display">\[y = f \left(  \sum_{j=1}^M w_{k j} z_j
+\right)\]</span></p>
+<ol type="1">
+<li>Para regressão, queremos minimizar a função de erro sum of squares
+error (SSE) da forma</li>
+</ol>
+<p><span class="math display">\[\text{Para um output simples: }
+E(\textbf{w}) = \frac{1}{2} \sum_{n=1}^N (y_n - t_n)^2\]</span></p>
+<p><span class="math display">\[\text{Para um vetor de output: }
+E(\textbf{w}) = \frac{1}{2} \sum_{n=1}^N \sum_{k=1}^K (y_{nk} -
+t_{nk})^2\]</span></p>
+<ol start="2" type="1">
+<li>Para classificação no caso binario, a função de erro aqui é a Cross
+Entropy que é dada por</li>
+</ol>
+<p><span class="math display">\[E(\textbf{w}) = - \sum_{n=1}^N t_n \ln
+y_n + (1 - t_n) \ln (1 - y_n)\]</span></p>
+<ol start="3" type="1">
+<li>Para classificação no caso com k classificadores, a função de erro é
+a generalização da (2)</li>
+</ol>
+<p><span class="math display">\[E(\textbf{w}) = - \sum_{n=1}^N
+\sum_{k=1}^K t_{nk} \ln y_{nk} + (1 - t_{nk}) \ln (1 -
+y_{nk})\]</span></p>
+<ol start="4" type="1">
+<li>Para classificação no caso com k classificadores, mas
+excludentes</li>
+</ol>
+<p><span class="math display">\[E(\textbf{w}) = - \sum_{n=1}^N
+\sum_{k=1}^K t_{nk} \ln y_{nk}\]</span></p>
+<h4 id="achando-uma-solução-pra-redes">Achando uma solução pra
+redes</h4>
+<p>Primeiro escolhemos um valor inicial para o vetor de pesos <span
+class="math inline">\(w^{(0)}\)</span> e depois atualizamos para um
+falor melhor de acordo com a função de erro, para atualizarmos podemos
+usar</p>
+<ol type="1">
+<li><span class="math inline">\(\textbf{Gradient
+Descendent}\)</span></li>
+</ol>
+<p><span class="math display">\[w^{(t+1)} = w^{(t)} - l \nabla
+E(\textbf{w}^{(t)})\]</span></p>
+<p>Onde l é o learning rate.</p>
+<ol start="2" type="1">
+<li><span class="math inline">\(\textbf{Sequential
+gradient}\)</span></li>
+</ol>
+<p>Sendo</p>
+<p><span class="math display">\[E(\textbf{w}) = \sum_{n = 1}^N E_n
+(\textbf{w})\]</span></p>
+<p>onde <span class="math inline">\(E_n (\textbf{w})\)</span>, é o erro
+do dado n, então</p>
+<p><span class="math display">\[w^{(t+1)} = w^{(t)} - l \nabla
+E_n(\textbf{w}^{(t)})\]</span></p>
+<p>Onde l é o learning rate, o que faz uma atualização com base em um
+ponto de dados por vez.</p>
+<h4
+id="backpropagation-método-eficiente-de-cálculo-de-derivadas-para-o-gradiente-descendente.">Backpropagation:
+método eficiente de cálculo de derivadas para o gradiente
+descendente.</h4>
+<p><span class="math display">\[\delta_j = \frac{\partial E_n}{\partial
+a_j} = h&#39;(a_j) \sum_k w_{k j} (y_k - t_k)\]</span></p>
+<h2 id="neural-networks---part-iii">Neural Networks - Part III</h2>
+<h4 id="error-backpropagation-algoritmo-de-propagação-de-erro.">Error
+Backpropagation: algoritmo de propagação de erro.</h4>
+<p>O Error Backpropagation fornece uma maneira de treinar redes com
+qualquer número de unidades ocultas dispostas em qualquer número de
+camadas, seguindo os seguintes passos</p>
+<ol type="1">
+<li><p>Aplique um vetor <span class="math inline">\(x_n\)</span> para a
+rede e propage atraves dela;</p></li>
+<li><p>Avalie o <span class="math inline">\(\delta_k\)</span> para todas
+as unidades de output;</p></li>
+<li><p>Use a formula de brackpropagation para propagar os <span
+class="math inline">\(\delta\)</span>’s e obter <span
+class="math inline">\(\delta_j\)</span> para as camadas
+ocultas;</p></li>
+<li><p>As derivadas requeridas são dadas por <span
+class="math inline">\(\delta_j z_i\)</span>, onde <span
+class="math inline">\(z_i\)</span> é o i-ésimo input para o nó
+j.</p></li>
+</ol>
+<h4 id="regularization">Regularization</h4>
+<p>Evitar overfitting do modelo, ou seja, saber escolher a quantidade de
+parametros do modelo (detalher clique <a
+href="https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a">aqui</a>),
+um regularizador simples é o quadratico, dado por</p>
+<p><span class="math display">\[\widetilde{E}(\textbf{w}) =
+E(\textbf{w}) + \frac{\lambda}{2} \textbf{w}^T \textbf{w}\]</span></p>
+<h2 id="clustering---part-i">Clustering - Part I</h2>
+<p>Clustering é agrupar coisas que ‘’andam juntas’’.</p>
+<h4 id="clustering-methods-métodos-de-agrupamento">Clustering Methods
+(Métodos de agrupamento)</h4>
+<ul>
+<li><p><span class="math inline">\(\textbf{Statistical}\)</span>: assume
+que os dados são gerados por um certo modelo probabilistico.</p></li>
+<li><p><span class="math inline">\(\textbf{Pairwise}\)</span>: defini-se
+uma função de similaridade entre os dados (distancia por exemplo) e
+então formula um críterio de otimalidade que o agrupamento deve
+otimizar.</p></li>
+</ul>
+<h4 id="algoritmos-de-clustering">Algoritmos de Clustering</h4>
+<ul>
+<li><span class="math inline">\(\textbf{Connected Components
+Analysis}\)</span>:</li>
+</ul>
+<p>Sendo os dados um grafo ponderado (da forma
+<code>Pairwise</code>)</p>
+<ol type="1">
+<li><p>Selecionamos um limite t;</p></li>
+<li><p>Apagamos todas as arestas cujo limite é maior que t;</p></li>
+<li><p>As partes do grafo que ainda estão conectadas são os clusters,
+pois são os dados mais próximos.</p></li>
+</ol>
+<ul>
+<li><span class="math inline">\(\textbf{K-Means
+clustering}\)</span>:</li>
+</ul>
+<ol type="1">
+<li><p>Seleciona K pontos de dados como centroides iniciais;</p></li>
+<li><p>Atribui a cada ponto o seu centroide mais proximo;</p></li>
+<li><p>Recalcula o centroide de cada cluster formado;</p></li>
+<li><p>Repete (2) e (3) até convergir.</p></li>
+</ol>
+<h2 id="clustering---part-ii">Clustering - Part II</h2>
+<ul>
+<li><span class="math inline">\(\textbf{Hierarchical
+clustering}\)</span>:</li>
+</ul>
+<ol type="1">
+<li><p>Cada ponto de dados é um cluster;</p></li>
+<li><p>Toma os 2 clustes mais semelhantes e os junta em 1
+cluster;</p></li>
+<li><p>Repete (2) …</p></li>
+</ol>
+<h2 id="clustering---part-iii">Clustering - Part III</h2>
+<ul>
+<li><span class="math inline">\(\textbf{ClusterONE}\)</span>: Tem como
+caracteristicas usar os pesos da rede, criar clusters sobrepostos e a
+velocidade do algoritmo.</li>
+</ul>
+<ol type="1">
+<li><p><code>Cluster Growth</code>: Os candidatos a cluster são grown
+(cultivados) a partir de nós de sementes selecionados, independentemente
+um do outro. O crescimento é impulsionado pela maximização gananciona de
+uma função objeto.</p></li>
+<li><p><code>Cluster Merging</code>: Candidatos a cluster semelhantes
+são agrupados no mesmo cluster.</p></li>
+<li><p><code>Cluster post-processing</code>: Os candidatos a cluster são
+finalmente pós-processados usando críterios simples.</p></li>
+</ol>
+<p>Para mais veja <a
+href="https://paccanarolab.org/cluster-one/">ClusterONE</a></p>
+<h2 id="decision-trees---part-i">Decision Trees - Part I</h2>
+<p>Uma Decision Tree é modelo de decisões condicionais em forma de
+árvore para a classificação ou regressão de um certo conjunto de dados.
+Uma Decision Tree se baseia em 2 passos:</p>
+<ol type="1">
+<li>Dividir o conjunto de features <span class="math inline">\(X_1,
+\ldots, X_p\)</span> em j regiões não sobrepostas <span
+class="math inline">\(R_1, \ldots, R_j\)</span>, de forma a minimizar o
+erro</li>
+</ol>
+<p><span class="math display">\[\sum_{j=1}^J \sum_{i \in R_j} (y_i -
+\hat{y}_{R_j})^2\]</span></p>
+<ol start="2" type="1">
+<li>Para cada dado na região <span class="math inline">\(R_j\)</span>,
+faça a mesma previsão, ou seja, tome todos os dados de <span
+class="math inline">\(R_j\)</span> como iguais, atribuindo por exemplo,
+a média dos valores resposta para as observações na região <span
+class="math inline">\(R_j\)</span>.</li>
+</ol>
+<h2 id="decision-trees---part-ii">Decision Trees - Part II</h2>
+<p>A questão é como sabemos que chegamos numa boa arvore? Um método para
+encontrar é fazer a maior árvore possivel (esperado que possa ter um
+dado em cada folha, ou seja, um dado em cada cluster), e depois Pruning
+(podar a árvore) removendo folhas da arvore e considerando o nó a baixo
+como a nova folha se essa poda melhorar o desempenho do modelo.</p>
+<p>Também podemos apenas interromper o crescimento da árvore que é
+computacionalmente mais barato, porém, o método de crescer e depois
+podar aproveita melhor os dados, então é mais preferivel.</p>
+<h2 id="introduction-to-random-forest">Introduction to Random
+Forest</h2>
+<p>O algoritmo irá criar varias árvores de decisão, de maneira
+aleatória, formando uma floresta, onde cada árvore será utilizada na
+escolha do resultado final pela função de erro. Esse é um dos melhores
+algoritmos de aprendizagem.</p>
+</body>
+</html>
