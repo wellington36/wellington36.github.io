@@ -7,7 +7,7 @@ html, body, div, h1, h2, h3, p, pre {
 	color: #333;
 }
 html, body {
-	background: rgb(207, 207, 207);
+	background: #F4BFBF;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 1.55;
@@ -17,7 +17,7 @@ h1 {
 	font: 40px/60px Gabriela, Georgia, serif;
 	text-align: center;
 	text-shadow: 3px 3px rgba(0,0,0,0.1);
-	color: #fff;	
+	color: #333;	
 }
 p {
 	margin-bottom: 40px;
@@ -25,7 +25,7 @@ p {
 }
 a {
 	text-decoration: underline;
-	color: #1889e6;
+	color: #8CC0DE;
 }
 a:hover {
 	text-decoration: none;
@@ -42,6 +42,7 @@ a:hover {
 	max-width: 980px;
 	margin: 0 auto;
 	padding: 0 20px 40px;
+	background-color: #FFD9C0;
 }
 
 /**/
@@ -233,6 +234,7 @@ a:hover {
 /**/
 .pcss3t .typography {
 	color: #666;
+	background: #FAF0D7;
 }
 .pcss3t .typography h1,
 .pcss3t .typography h2,
@@ -785,7 +787,7 @@ a:hover {
 .pcss3t-theme-1 > label {
 	margin: 0 5px 5px 0;
 	border-radius: 5px;
-	background: #fff;
+	background: #FAF0D7;
 	box-shadow: 0 2px rgba(0,0,0,0.2);
 	color: #808080;
 	opacity: 0.8;
@@ -801,6 +803,7 @@ a:hover {
 	border-bottom-left-radius: 0;
 	color: #2b82d9;
 	opacity: 1;
+	background: #FAF0D7;
 }
 .pcss3t-theme-1 > ul {
 	border-radius: 5px;
@@ -837,7 +840,7 @@ a:hover {
 	background: none;
 	border-radius: 0;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-	color: #fff;
+	color: #808080;
 	opacity: 1;
 }
 .pcss3t-theme-2 > label:hover {
