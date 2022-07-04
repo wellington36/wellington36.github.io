@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Resumo TACD - A2</title>
+  <title>Resumo de TACD</title>
   <style>
     html {
       line-height: 1.5;
@@ -162,10 +162,15 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Resumo TACD - A2</h1>
+<h1 class="title">Resumo de TACD</h1>
 </header>
 <nav id="TOC" role="doc-toc">
 <ul>
+<li><a href="#taxonomy-of-ml">Taxonomy of ML</a></li>
+<li><a href="#key-concepts-in-ml">Key Concepts in ML</a></li>
+<li><a href="#linear-regression">Linear Regression</a></li>
+<li><a href="#regularized-least-squares-rls">Regularized Least Squares
+(RLS)</a></li>
 <li><a href="#neural-networks---part-i">Neural Networks - Part
 I</a></li>
 <li><a href="#neural-networks---part-ii">Neural Networks - Part
@@ -182,6 +187,82 @@ II</a></li>
 Forest</a></li>
 </ul>
 </nav>
+<h2 id="taxonomy-of-ml">Taxonomy of ML</h2>
+<h4 id="ml-baseada-nos-tipos-de-dados">ML baseada nos tipos de
+dados:</h4>
+<ol type="1">
+<li><p><span class="math inline">\(\textbf{Aprendizado
+supervisionado}\)</span> (classificação e regressão): Olhamos para todos
+os dados incluindo o que queremos predizer.</p></li>
+<li><p><span class="math inline">\(\textbf{Aprendizado não
+supervisionado}\)</span> (clusterização e estimação de densidade): Só
+temos as entradas e não as saidas.</p></li>
+<li><p><span class="math inline">\(\textbf{Aprendizado
+semi-supervisionado}\)</span>: Considerar pontos que não tem informação
+além do conjunto de traino.</p></li>
+<li><p><span class="math inline">\(\textbf{Aprendizado por
+reforço}\)</span>: Um agente interrage com o ambiente por estados
+recebendo reward por cada ação.</p></li>
+</ol>
+<h4 id="ml-baseada-na-facilidade-de-generalização">ML baseada na
+facilidade de generalização</h4>
+<ol type="1">
+<li><p><span class="math inline">\(\textbf{Aprendizado baseado em
+instância}\)</span>: Decidir uma classificação atravez de pontos
+proximos no conjunto de traino.</p></li>
+<li><p><span class="math inline">\(\textbf{Aprendizado baseado em
+modelo}\)</span>: Usar os pontos de traino pra construir um modelo e
+pelo modelo classificar os novos pontos.</p></li>
+</ol>
+<h2 id="key-concepts-in-ml">Key Concepts in ML</h2>
+<h4 id="o-problema-de-regressão-supervisionada">O problema de regressão
+(supervisionada)</h4>
+<ol type="1">
+<li>Escolher um modelo.</li>
+</ol>
+<p><span class="math display">\[y(x, \textbf{w}) = w_0 + w_1 x + \ldots
++ w_M x^M = \sum_{j=0}^M w_j x^j\]</span></p>
+<ol start="2" type="1">
+<li><p>Ajustar (aprender) os parametros do modelo usando os dados e uma
+função de erro (SSE or RMS).</p></li>
+<li><p>Usar o modelo ajustado para predição.</p></li>
+</ol>
+<h2 id="linear-regression">Linear Regression</h2>
+<p>Dado um conjundo de N observações (em geral, um vetor) e um conjunto
+de N valores para cada respectiva observação, queremos predizir o valor
+de uma nova observação.</p>
+<ul>
+<li>Modelo linear mais simples para regressão</li>
+</ul>
+<p><span class="math display">\[y(\textbf{x}, \textbf{w}) = w_0 + w_1
+x_1 + \ldots + w_D x_D = w_0 + \sum_{i = 1}^D w_i x_i\]</span></p>
+<ul>
+<li>Combinações lineares de funções de base fixas e não lineares</li>
+</ul>
+<p><span class="math display">\[y(\textbf{x}, \textbf{w}) =  w_0 +
+\sum_{j = 1}^{M - 1} w_j \phi_j(\textbf{x})\]</span></p>
+<h4 id="funções-classicas">Funções classicas</h4>
+<ul>
+<li><span class="math inline">\(\textbf{Polinomial}\)</span>:</li>
+</ul>
+<p><span class="math display">\[\phi_j(x) = x^j\]</span></p>
+<ul>
+<li><span class="math inline">\(\textbf{Gaussiana}\)</span>:</li>
+</ul>
+<p><span class="math display">\[\phi_j(x) = \text{exp} \left ( -
+\frac{(x - \mu_j)^2}{2 s^2} \right )\]</span></p>
+<ul>
+<li><span class="math inline">\(\textbf{Sigmoide}\)</span>:</li>
+</ul>
+<p><span class="math display">\[\phi_j (x) = \sigma \left ( \frac{x -
+\mu_j}{s} \right )\]</span></p>
+<p><span class="math display">\[\sigma(a) = \frac{1}{1 +
+\text{exp}(-a)}\]</span></p>
+<h2 id="regularized-least-squares-rls">Regularized Least Squares
+(RLS)</h2>
+<p>é uma família de métodos para resolver o problema dos mínimos
+quadrados usando regularização para restringir mais a solução
+resultante.</p>
 <h2 id="neural-networks---part-i">Neural Networks - Part I</h2>
 <h4
 id="linear-models-para-regressão-e-classificação-são-da-forma">Linear
@@ -197,7 +278,7 @@ construimos uma combinação linear da forma</li>
 </ol>
 <p><span class="math display">\[ a_j = \sum_{i=1}^n w_{ji}^{(1)} x_i +
 w_{j 0}^{(1)} \]</span></p>
-<ol start="2" type="1">
+<ol type="1">
 <li>Cada combinação passa por uma função de ativação diferenciavel
 h</li>
 </ol>
@@ -213,7 +294,7 @@ w_{k 0}^{(2)} \]</span></p>
 <h2 id="neural-networks---part-ii">Neural Networks - Part II</h2>
 <h4 id="funções-de-erro">Funções de erro</h4>
 <p>Sendo</p>
-<p><span class="math display">\[y = f \left(  \sum_{j=1}^M w_{k j} z_j
+<p><span class="math display">\[y = f \left( \sum_{j=1}^M w_{k j} z_j
 \right)\]</span></p>
 <ol type="1">
 <li>Para regressão, queremos minimizar a função de erro sum of squares
@@ -224,7 +305,7 @@ E(\textbf{w}) = \frac{1}{2} \sum_{n=1}^N (y_n - t_n)^2\]</span></p>
 <p><span class="math display">\[\text{Para um vetor de output: }
 E(\textbf{w}) = \frac{1}{2} \sum_{n=1}^N \sum_{k=1}^K (y_{nk} -
 t_{nk})^2\]</span></p>
-<ol start="2" type="1">
+<ol type="1">
 <li>Para classificação no caso binario, a função de erro aqui é a Cross
 Entropy que é dada por</li>
 </ol>
@@ -247,7 +328,7 @@ excludentes</li>
 redes</h4>
 <p>Primeiro escolhemos um valor inicial para o vetor de pesos <span
 class="math inline">\(w^{(0)}\)</span> e depois atualizamos para um
-falor melhor de acordo com a função de erro, para atualizarmos podemos
+valor melhor de acordo com a função de erro, para atualizarmos podemos
 usar</p>
 <ol type="1">
 <li><span class="math inline">\(\textbf{Gradient
@@ -256,7 +337,7 @@ Descendent}\)</span></li>
 <p><span class="math display">\[w^{(t+1)} = w^{(t)} - l \nabla
 E(\textbf{w}^{(t)})\]</span></p>
 <p>Onde l é o learning rate.</p>
-<ol start="2" type="1">
+<ol type="1">
 <li><span class="math inline">\(\textbf{Sequential
 gradient}\)</span></li>
 </ol>
@@ -274,7 +355,7 @@ id="backpropagation-método-eficiente-de-cálculo-de-derivadas-para-o-gradiente-
 método eficiente de cálculo de derivadas para o gradiente
 descendente.</h4>
 <p><span class="math display">\[\delta_j = \frac{\partial E_n}{\partial
-a_j} = h&#39;(a_j) \sum_k w_{k j} (y_k - t_k)\]</span></p>
+a_j} = h\&#39;(a_j) \sum_k w_{k j} (y_k - t_k)\]</span></p>
 <h2 id="neural-networks---part-iii">Neural Networks - Part III</h2>
 <h4 id="error-backpropagation-algoritmo-de-propagação-de-erro.">Error
 Backpropagation: algoritmo de propagação de erro.</h4>
@@ -292,12 +373,12 @@ class="math inline">\(\delta_j\)</span> para as camadas
 ocultas;</p></li>
 <li><p>As derivadas requeridas são dadas por <span
 class="math inline">\(\delta_j z_i\)</span>, onde <span
-class="math inline">\(z_i\)</span> é o i-ésimo input para o nó
+class="math inline">\(z_i\)</span>é o i-ésimo input para o nó
 j.</p></li>
 </ol>
 <h4 id="regularization">Regularization</h4>
-<p>Evitar overfitting do modelo, ou seja, saber escolher a quantidade de
-parametros do modelo (detalher clique <a
+<p>Evitar overfitting do modelo, ou seja, limitar a quantidade de
+parametros (detalhes clique <a
 href="https://towardsdatascience.com/regularization-in-machine-learning-76441ddcf99a">aqui</a>),
 um regularizador simples é o quadratico, dado por</p>
 <p><span class="math display">\[\widetilde{E}(\textbf{w}) =
