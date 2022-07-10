@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <header>Documentação de JavaScript</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introdução">Introdução</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#JavaScript_e_Java">JavaScript e Java</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Hello_World">Hello World</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Declaração_de_variaveis">Declaração de variaveis</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Variaveis_globais">Variaveis globais</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Tipos_de_dados">Tipos de dados</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Declaração_if...else">Declaração if...else</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Referencias">Referencias</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="main-doc">
+            <section class="main-section" id="Introdução">
+                <header>Introdução</header>
+                <article>
+                    <p>
+                        JavaScript é uma linguagem de programação orientada a objetos.
+                        É uma linguagem pequena e leve. Dentro de um ambiente host, o JavaScript pode ser conectado a objetos de seu entorno para fornecer controle sobre eles.
+                    </p>
+                    <p>
+                        O JavaScript contém uma biblioteca padrão de objetos, como Array, Data e Math, e um conjunto básico de elementos de linguagem, como operadores, estruturas de controle e instruções.
+                        O JavaScript pode ser usado para uma variedade objetivos, por exemplo:
+                    </p>
+                    <ul>
+                        <li>
+                            Client-side JavaScript fornece os meios para controlar um navegador e seu Document Object Model. 
+                        </li>
+                        <li>
+                            Server-side JavaScript fornece os meios para executar o JavaScript em um servidor.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="main-section" id="JavaScript_e_Java">
+                <header>JavaScript e Java</header>
+                <article>
+                    <p>
+                        JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferentes em outros. A linguagem JavaScript se assemelha a Java, mas não possui a tipagem estática e a verificação de tipo forte de Java. O JavaScript segue a maioria das sintaxes de expressão Java, convenções de nomenclatura e construções básicas de fluxo de controle, razão pela qual foi renomeado de LiveScript para JavaScript.
+                    </p>
+                    <p>
+                        Em contraste com o sistema de classes de tempo de compilação do Java construído por declarações, o JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados que representam valores numéricos, booleanos e string. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto baseado em classe mais comum. O modelo baseado em protótipo fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. As funções podem ser propriedades de objetos, executando como métodos de tipagem flexível.
+                    </p>
+                    <p>
+                        JavaScript é uma linguagem de forma muito livre em comparação com Java. Você não precisa declarar todas as variáveis, classes e métodos. Você não precisa se preocupar se os métodos são públicos, privados ou protegidos e não precisa implementar interfaces: Variáveis, parâmetros e tipos de retorno de função não são explicitamente tipados.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Hello_World">
+                <header>Hello World</header>
+                <article>
+                    Vamos começar com o primeiro "Hello world" em JavaScrip, da seguinte forma:
+                    <code>function greetMe() {alert("Hello World"); }</code>
+                </article>
+            </section>
+
+            <section class="main-section" id="Declaração_de_variaveis">
+                <header>Declaração de variaveis</header>
+                <article>
+                    Você pode declarar uma variavel de 3 formas:
+                    <p>
+                        Com o comando var. Por exemplo,
+
+                        <code>var x = 42;</code>
+
+                        Está sintaxe pode ser usada para variaveis locais e globais.
+                    </p>
+
+                    <p>
+                        Simplesmente atribuindo o valor. Por exemplo,
+
+                        <code>x = 42;</code>
+
+                        Está é sempre uma variavel global. O que pode gerar programas perigosos.
+                    </p>
+                    
+                    <p>
+                        Ou com o comando let. Por exemplo,
+
+                        <code>let x = 42;</code>
+
+                        Está forma pode ser usada para variaveis de scopo de bloco.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Variaveis_globais">
+                <header>Variaveis globais</header>
+                <article>
+                    <p>
+                        As variáveis globais são, na verdade, propriedades do objeto global. Em páginas da web, o objeto global é window, então você pode definir e acessar variáveis globais usando a sintaxe window.variable.
+                    </p>
+
+                    <p>
+                        Logo, você pode acessar variáveis globais declaradas em uma janela ou quadro de outra janela ou quadro especificados.
+                    </p>
+                </article>
+            </section>
+
+            <section class="main-section" id="Tipos_de_dados">
+                <header>Tipos de dados</header>
+                <article>
+                    <p>
+                        O padrão ECMAScript mais recente define sete tipos de dados:
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                Seis tipos de dados primitivos:
+                            </p>
+                            <ul>
+                                <li>
+                                    Bollean. true ou false.
+                                </li>
+                                <li>
+                                    null. Denota o valor vazio.
+                                </li>
+                                <li>
+                                    undefined. Uma propriedades de nivel alto que denota um valor não definido.
+                                </li>
+                                <li>
+                                    Number. um número, 42 ou 3.14159, por exemplo.
+                                </li>
+                                <li>
+                                    String. um texto, "Hello", por exemplo.
+                                </li>
+                                <li>
+                                    Symbol. Um tipo de dados cujas instâncias são únicos e imutáveis.
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li> e Objetos</li>
+                    </ul>
+
+                    Embora esses tipos de dados sejam uma quantidade relativamente pequena, eles permitem que você execute funções úteis com seus aplicativos. Objetos e funções são os outros elementos fundamentais da linguagem. Você pode pensar em objetos como contêineres nomeados para valores e funções como procedimentos que seu aplicativo pode executar.
+                </article>
+            </section>
+
+            <section class="main-section" id="Declaração_if...else">
+                <header>Declaração if...else</header>
+                <article>
+                    Usamos a declaração if para executar condicionais, e o opcional else para caso a condição do if não ocorra, por exemplo:
+
+                    <code>if (condicional) { codigo_1; } else { codigo_2; } </code>
+
+                    condicionais pode ser qualquer expressão que resulte num true ou false. Se a condição por verdadeira executa o codigo_1 se não executa o codigo_2.
+                    Você também pode computar multiplas condições, fazendo:
+
+                    <code>if (condicional_1) { codigo_1; } else if (condicional_2) { codigo_2; } else if (condicional_n) { codigo_n; } else { codigo_last; }</code>
+
+                    No caso de várias condições, apenas a primeira condição lógica avaliada como verdadeira será executada. Para executar várias instruções, agrupe-as em uma instrução de bloco ({ ... }) . Em geral, é uma boa prática sempre usar instruções de bloco, especialmente ao alinhar instruções if:
+
+                    <code>if (condicional) { codigo_1_roda_se_condicional_ŕ_true;
+                        codigo_2_roda_se_condicional_é_true; } else {
+                        codigo_3_roda_se_condicional_é_false;
+                        codigo_4_roda_se_condicional_é_false; }
+                    </code>
+
+                    É aconselhável não usar atribuições simples em uma expressão condicional, porque a atribuição pode ser confundida com igualdade ao examinar o código. Por exemplo, não use o seguinte código:
+
+                    <code>if (x = y) { /* codigo aqui */ }</code>
+
+                    Se você precisar usar alguma atribuição em uma expressão condicional, uma prática comum é colocar parênteses adicionais ao redor da atribuição. Por exemplo:
+
+                    <code>if ((x = y)) { /* codigo aqui */ }</code>
+                </article>
+            </section>
+
+            <section class="main-section" id="Referencias">
+                <header>Referencias</header>
+                <article>
+                    <ul>
+                        <li>
+                            Toda documentação pode ser encontrada em <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
