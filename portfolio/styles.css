@@ -135,6 +135,7 @@
   }
   
   .welcome-section > p {
+    display: flex;
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
@@ -150,15 +151,20 @@
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: #000;
-    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background: var(--main-blue);
+    padding: 1rem 2rem;
   }
   
   .publications-section > p {
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
-    color: var(--main-red);
+    color: var(--main-write);
+  }
+
+  .ol li {
+    margin: 20px;
+    padding: 20px;
   }
   
   /* Projects section */
@@ -166,7 +172,8 @@
   .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    background: var(--main-blue);
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   }
   
   .projects-section-header {
@@ -265,7 +272,7 @@
     width: 100%;
     height: 80vh;
     padding: 0 2rem;
-    background: var(--main-gray);
+    background: var(--main-blue);
   }
   
   .contact-section-header > h2 {
