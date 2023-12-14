@@ -7331,7 +7331,7 @@ a.anchor-link {
     if (!diagrams.length) {
       return;
     }
-    const mermaid = (await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.5.0/mermaid.esm.min.mjs")).default;
+    const mermaid = (await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.0/mermaid.esm.min.mjs")).default;
     const parser = new DOMParser();
 
     mermaid.initialize({
@@ -7482,7 +7482,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Requirements-and-create-a-environment">Requirements and create a environment<a class="anchor-link" href="#Requirements-and-create-a-environment">¶</a></h1>
+<h1 id="Start-the-setup">Start the setup<a class="anchor-link" href="#Start-the-setup">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7519,7 +7519,8 @@ Installing collected packages: pip
     Uninstalling pip-23.2.1:
       Successfully uninstalled pip-23.2.1
 Successfully installed pip-23.3.1
-</pre>
+<span class="ansi-yellow-fg">WARNING: There was an error checking the latest version of pip.</span><span class="ansi-yellow-fg">
+</span></pre>
 </div>
 </div>
 </div>
@@ -7551,11 +7552,11 @@ Successfully installed pip-23.3.1
 Installing collected packages: mpmath
 Successfully installed mpmath-1.3.0
 Collecting extrapolation
-  Using cached extrapolation-2.0.2-py3-none-any.whl.metadata (5.8 kB)
+  Using cached extrapolation-2.1.1-py3-none-any.whl.metadata (6.7 kB)
 Requirement already satisfied: mpmath in ./venv/lib/python3.11/site-packages (from extrapolation) (1.3.0)
-Using cached extrapolation-2.0.2-py3-none-any.whl (6.6 kB)
+Using cached extrapolation-2.1.1-py3-none-any.whl (7.2 kB)
 Installing collected packages: extrapolation
-Successfully installed extrapolation-2.0.2
+Successfully installed extrapolation-2.1.1
 </pre>
 </div>
 </div>
@@ -7568,7 +7569,72 @@ Successfully installed extrapolation-2.0.2
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id=""><a class="anchor-link" href="#">¶</a></h1>
+<h1 id="Extrapolation-Methods">Extrapolation Methods<a class="anchor-link" href="#Extrapolation-Methods">¶</a></h1><p>Let be $S_n = {\sum}^{n}_{i=1} a_i$ a sequence of partial sums. This repository contains implementations of the following series transformations, which generate a new sequence $T\_n$:</p>
+<ul>
+<li><p><a href="https://en.wikipedia.org/wiki/Aitken%27s_delta-squared_process">Aitken's transformation (or delta-squared process)</a>:</p>
+<ul>
+<li>In <code>esum</code>: O($2n\log n$)</li>
+<li>In <code>acelsum</code>: O($n$)</li>
+</ul>
+$$T_n = \frac{S_{n-1} S_{n+1} - S_n^2}{S_{n+1} - 2 S_n + S_{n-1}}.$$</li>
+<li><p><a href="https://en.wikipedia.org/wiki/Richardson_extrapolation">Richardson's transformation (modify, with given p)</a>:</p>
+<ul>
+<li>In <code>esum</code>: O($2(\log n)^2$)</li>
+<li>In <code>acelsum</code>: O($\log n$)</li>
+</ul>
+$$T_n = S_{2n} + \frac{S_{2n} - S_n}{2^p - 1}.$$<p>Here, we use $p = 1$ for simplicity.</p>
+</li>
+<li><p><a href="https://www.sciencedirect.com/science/article/pii/S0377042700003551">Epsilon transformation</a>:</p>
+<ul>
+<li>In <code>esum</code>: O($2n\log n$)</li>
+<li>In <code>acelsum</code>: O($n$)</li>
+</ul>
+<p>Let be the auxiliary sequence $\varepsilon_n^j$ defined by:</p>
+$$\varepsilon_{-1}^{j} = 0\ \text{and}\ \varepsilon_{0}^{j} = S_j,$$<p>and inductively:</p>
+$$\varepsilon_{k+1}^{j} = \varepsilon_{k-1}^{j+1} + [\varepsilon_{k}^{j+1} - \varepsilon_{k}^{j}]^{-1}.$$<p>Then, $T_n = \varepsilon_{n-1}^{2}$ (because the odd steps are only partial steps).</p>
+</li>
+<li><p><a href="https://www.cambridge.org/core/books/abs/practical-extrapolation-methods/gtransformation-and-its-generalizations/B3A1C6628B6C3E6438C943E25FFA621D">G transformation</a>:</p>
+<ul>
+<li>In <code>esum</code>: O($4n\log n$)</li>
+<li>In <code>acelsum</code>: O($2n$)</li>
+</ul>
+<p>Let be two auxiliary sequences $s_j^{(n)}$ and $r_j^{(n)}$ defined by:</p>
+$$s^{(n)}\_0 = 1,\ r^{(n)}\_1 = x\_n,\ n=0,1,\ldots,$$<p>inductively:</p>
+$$s^{(n)}\_{k+1} = s^{(n+1)}\_{k} \left( \frac{r^{(n+1)}\_{k+1}}{r^{(n)}\_{k+1}} - 1 \right),\ k,n = 0,1,\ldots$$<p>and</p>
+$$r^{(n)}\_{k+1} = r^{(n+1)}\_{k} \left( \frac{s^{(n+1)}\_{k}}{s^{(n)}\_{k}} - 1 \right),\ k=1,2,\ldots;\ n=0,1,\ldots$$<p>Then, $T\_n = S\_n - \frac{S\_{n+1} - S\_{n}}{r^{(n+1)}\_{1} - r^{(n)}\_{1}} r^{(n)}\_{1}$.</p>
+</li>
+<li><p><a href="https://epubs.siam.org/doi/abs/10.1137/0716017">Levin transformation</a>:</p>
+<ul>
+<li>In <code>esum</code>: O($4n\log n$)</li>
+<li>In <code>acelsum</code>: O($2n$)</li>
+</ul>
+<p>This method is defined by</p>
+$$W_n^{(k)} = \frac{M_n^{(k)}}{N_n^{(k)}}$$<p>where</p>
+$$M_n^{(0)} = \frac{S_n}{g(n)},$$$$M_{n}^{(k+1)} = \frac{M_{n+1}^{(k)} - M_{n}^{(k)}}{a_{n + k}^{-1} - a_{n + 1}^{-1}},$$<p>and</p>
+$$N_n^{(0)} = \frac{1}{g(n)},$$$$N_{n}^{(k+1)} = \frac{N_{n+1}^{(k)} - N_{n}^{(k)}}{a_{n + k}^{-1} - a_{n + 1}^{-1}}.$$<p>For the function $g(n)$, we have some classic choices for this function:</p>
+<ul>
+<li><strong>t-variant</strong>: $g(n) = a_{n+1}$;</li>
+<li><strong>u-variant</strong>: $g(n) = n a_n$;</li>
+<li><strong>v-variant</strong>: $g(n) = a_n a_{n+1} / (a_{n+1} - a_n)$.</li>
+</ul>
+<p>Then, $T\_n = \frac{M\_n^{(1)}}{N\_n^{(1)}}$.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">extrapolation</span> <span class="kn">import</span> <span class="n">esum</span><span class="p">,</span> <span class="n">acelsum</span>
+<span class="kn">import</span> <span class="nn">math</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -7579,7 +7645,7 @@ Successfully installed extrapolation-2.0.2
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Topic-1">Topic 1<a class="anchor-link" href="#Topic-1">¶</a></h1>
+<h1 id="Prinpipal-funcions">Prinpipal funcions<a class="anchor-link" href="#Prinpipal-funcions">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7590,18 +7656,15 @@ Successfully installed extrapolation-2.0.2
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Topic-2">Topic 2<a class="anchor-link" href="#Topic-2">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Topic-3">Topic 3<a class="anchor-link" href="#Topic-3">¶</a></h1>
+<h3 id="esum">esum<a class="anchor-link" href="#esum">¶</a></h3><p>The <code>esum</code> receives on input:</p>
+<ul>
+<li><em>A series</em>: In the form of a function $f: \mathbb{N} \to \mathbb{R}$ returning the terms to be summed.</li>
+<li><em>The Transformation</em>: "Aitken", "Richardson", "Epsilon", "G", "Levin-t", "Levin-u", "Levin-v" and "None", the latter being using the initial series without any transformation.</li>
+<li><em>The stopping criterion</em>: In case the difference of the last two values of the series are smaller than a given error.</li>
+<li><em>Return in logarithm scale</em>: True if you want to receive the return in logarithm scale with the sign and False if you want to receive in normal scale.</li>
+<li><em>Precision</em>: If precision is 53 we use the default python precision, otherwise the given bits precision.</li>
+</ul>
+<p>This function determines the minimum value of n for which, the difference between the last partial sums becomes less than the specified error when applying the transformation. And returns the series applied to the transformation. The following is an example:</p>
 </div>
 </div>
 </div>
@@ -7610,13 +7673,10 @@ Successfully installed extrapolation-2.0.2
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">extrapolation</span> <span class="kn">import</span> <span class="n">esum</span>
-<span class="kn">import</span> <span class="nn">math</span>
-
-<span class="c1"># Test with no_transform (without transformation) and with Richardson transformation the basel problem</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Test with no_transform (without transformation) and with Richardson transformation the basel problem</span>
 <span class="n">n0</span><span class="p">,</span> <span class="n">no_accelerated</span> <span class="o">=</span> <span class="n">esum</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'None'</span><span class="p">,</span> <span class="n">error</span><span class="o">=</span><span class="mf">1e-12</span><span class="p">,</span> <span class="n">logarithm</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 <span class="n">n1</span><span class="p">,</span> <span class="n">accelerated</span> <span class="o">=</span> <span class="n">esum</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'Richardson'</span><span class="p">,</span> <span class="n">error</span><span class="o">=</span><span class="mf">1e-12</span><span class="p">,</span> <span class="n">logarithm</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 
@@ -7637,8 +7697,63 @@ Successfully installed extrapolation-2.0.2
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>True value:           1.6449340668482264
-Without acceleration: 1.6449330668607708753650232828, with 1000012 iterations
-With acceleration:    1.6449340611256049164589309217, with 22896 iterations
+Without acceleration: 1.6449330668487264267523920296, with 1000000 iterations
+With acceleration:    1.6449340611255960068665838135, with 22896 iterations
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="acelsum">acelsum<a class="anchor-link" href="#acelsum">¶</a></h3><p>We have also the <code>acelsum</code> function, that receives on input:</p>
+<ul>
+<li><em>A series</em>: In the form of a function $f: \mathbb{N} \to \mathbb{R}$ returning the terms to be summed.</li>
+<li><em>The Transformation</em>: "Aitken", "Richardson", "Epsilon", "G", "Levin-t", "Levin-u", "Levin-v" and "None", the latter being using the initial series without any transformation.</li>
+<li><em>Natural n</em>: Number of values to be summed.</li>
+<li><em>Return in logarithm scale</em>: True if you want to receive the return in logarithm scale with the sign and False if you want to receive in normal scale.</li>
+<li><em>Precision</em>: If precision is 53 we use the default python precision, otherwise the given bits precision.</li>
+</ul>
+<p>This function calculates partial sums up to a given natural value, returning the result in log-scale or normal by applying a chosen transformation. The following is an example:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Test with no_transform (without transformation) and with Richardson transformation the basel problem</span>
+<span class="n">no_accelerated</span> <span class="o">=</span> <span class="n">acelsum</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'None'</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">logarithm</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">accelerated</span> <span class="o">=</span> <span class="n">acelsum</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="s1">'Richardson'</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">logarithm</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># Comparison</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"True value:           </span><span class="si">{</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="w"> </span><span class="o">**</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">6</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Without acceleration: </span><span class="si">{</span><span class="n">no_accelerated</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"With acceleration:    </span><span class="si">{</span><span class="n">accelerated</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>True value:           1.6449340668482264
+Without acceleration: 1.6439345666815597935850701245
+With acceleration:    1.6449310678482254269248263997
 </pre>
 </div>
 </div>
@@ -7660,7 +7775,7 @@ With acceleration:    1.6449340611256049164589309217, with 22896 iterations
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span>rm<span class="w"> </span>-r<span class="w"> </span>-f<span class="w"> </span>venv
