@@ -200,17 +200,42 @@
     margin: 0 auto; /* Centers the container */
 }
 
-/* First two items should be grouped and centered */
+/* Ensures first two projects are centered */
 .projects-grid > div:nth-child(1),
 .projects-grid > div:nth-child(2) {
-    flex: 0 1 50%; /* Each takes half of the width */
+    flex: 0 1 50%; /* Each takes half the width */
     display: flex;
-    justify-content: center; /* Ensures internal centering */
+    justify-content: center;
 }
 
-/* Remaining items should take full width and be centered */
+/* Remaining items take equal width */
 .projects-grid > div:nth-child(n+3) {
-    flex: 0 1 30%; /* Adjust width for items in second row */
+    flex: 0 1 30%; /* Adjust width for second row */
+}
+
+/* Fixing size of project boxes */
+.project {
+    background: var(--main-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Ensuring all images have the same size */
+.project img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* Ensures images scale properly */
+}
+
+/* Titles stay uniform */
+.project-title {
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
 }
 
 
