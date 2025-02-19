@@ -203,7 +203,7 @@
 /* First two items should be grouped and centered */
 .projects-grid > div:nth-child(1),
 .projects-grid > div:nth-child(2) {
-    flex: 0 1 100%; /* Each takes half of the width */
+    flex: 0 1 50%; /* Each takes half of the width */
     display: flex;
     justify-content: center; /* Ensures internal centering */
 }
