@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"title": {"font": "Arial"}, "axis": {"labelFont": "Arial", "titleFont": "Arial", "titleFontWeight": "normal", "labelColor": "#888888", "titleColor": "#888888"}, "header": {"labelFont": "Arial", "titleFont": "Arial", "titleFontWeight": "normal"}, "legend": {"labelFont": "Arial", "titleFont": "Arial", "titleFontWeight": "normal", "labelColor": "#888888", "titleColor": "#888888"}, "view": {"stroke": null}}, "data": {"name": "data-13520409ad86f45dcdc5ffddb0560f29"}, "mark": {"type": "bar", "size": 35}, "encoding": {"color": {"condition": {"test": "(datum.Metric === 'Taxa n\u00e3o aprova\u00e7\u00e3o')", "value": "#ECECEC"}, "field": "TempoProfissao", "legend": {"orient": "bottom", "title": ["Tempo de Profiss\u00e3o"]}, "scale": {"range": ["#73BFE8", "#008BC9", "#0C63AA", "#003A79", "#002D4D"]}, "sort": ["Nenhum"], "type": "nominal"}, "opacity": {"condition": {"param": "param_17", "value": 1, "empty": true}, "value": 0.3}, "order": {"field": "Metric", "sort": "ascending", "type": "nominal"}, "tooltip": [{"field": "TempoProfissao", "title": "Tempo de Profiss\u00e3o", "type": "nominal"}, {"field": "Metric", "title": "Taxa Representada", "type": "nominal"}, {"field": "Value", "format": ".2%", "title": "Porcentagem", "type": "quantitative"}], "x": {"axis": {"format": "%", "grid": false, "titleAnchor": "end", "titleFontSize": 13}, "field": "Value", "title": "Porcentagem de Aprovados e N\u00e3o Aprovados", "type": "quantitative"}, "y": {"axis": null, "field": "TempoProfissao", "sort": ["Nenhum"], "title": "Tempo de Profiss\u00e3o", "type": "nominal"}}, "height": 200, "params": [{"name": "param_17", "select": {"type": "point", "on": "mouseover"}}], "width": 375, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-13520409ad86f45dcdc5ffddb0560f29": [{"TempoProfissao": "De 1 a 2 anos", "Metric": "Taxa aprova\u00e7\u00e3o", "Value": 0.11494252873563218}, {"TempoProfissao": "De 2 a 5 anos", "Metric": "Taxa aprova\u00e7\u00e3o", "Value": 0.2037037037037037}, {"TempoProfissao": "De 5 a 10 anos", "Metric": "Taxa aprova\u00e7\u00e3o", "Value": 0.06451612903225806}, {"TempoProfissao": "Mais de 10 anos", "Metric": "Taxa aprova\u00e7\u00e3o", "Value": 0.06060606060606061}, {"TempoProfissao": "Nenhum", "Metric": "Taxa aprova\u00e7\u00e3o", "Value": 0.14285714285714288}, {"TempoProfissao": "De 1 a 2 anos", "Metric": "Taxa n\u00e3o aprova\u00e7\u00e3o", "Value": 0.8850574712643678}, {"TempoProfissao": "De 2 a 5 anos", "Metric": "Taxa n\u00e3o aprova\u00e7\u00e3o", "Value": 0.7962962962962963}, {"TempoProfissao": "De 5 a 10 anos", "Metric": "Taxa n\u00e3o aprova\u00e7\u00e3o", "Value": 0.9354838709677419}, {"TempoProfissao": "Mais de 10 anos", "Metric": "Taxa n\u00e3o aprova\u00e7\u00e3o", "Value": 0.9393939393939393}, {"TempoProfissao": "Nenhum", "Metric": "Taxa n\u00e3o aprova\u00e7\u00e3o", "Value": 0.8571428571428571}]}};
+      var embedOpt = {"renderer": "svg", "actions": false, "mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

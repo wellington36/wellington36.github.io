@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"title": {"font": "Arial"}, "axis": {"labelFont": "Arial", "titleFont": "Arial", "titleFontWeight": "normal", "labelColor": "#888888", "titleColor": "#888888"}, "header": {"labelFont": "Arial", "titleFont": "Arial", "titleFontWeight": "normal"}, "legend": {"labelFont": "Arial", "titleFont": "Arial", "titleFontWeight": "normal", "labelColor": "#888888", "titleColor": "#888888"}, "view": {"stroke": null}}, "concat": [{"data": {"name": "data-1190aa2de98843be52ea2fd5ada3415f"}, "mark": {"type": "bar", "color": "#3BAE96", "size": 50}, "encoding": {"opacity": {"condition": {"param": "param_1", "value": 1, "empty": true}, "value": 0.3}, "tooltip": [{"field": "FaixaIdade", "title": "Faixa de Idade", "type": "nominal"}, {"field": "Sexo", "title": "G\u00eanero", "type": "nominal"}, {"field": "Total inscritos", "title": "N\u00famero de Inscritos", "type": "quantitative"}], "x": {"axis": {"grid": false}, "field": "Total inscritos", "scale": {"domain": [0, 215], "reverse": true}, "title": "Total de Inscritos (Masculino)", "type": "quantitative"}, "y": {"axis": null, "field": "FaixaIdade", "sort": "descending", "type": "ordinal"}}, "height": 400, "name": "view_3", "width": 200}, {"data": {"name": "data-1190aa2de98843be52ea2fd5ada3415f"}, "mark": {"type": "text", "color": "#888888"}, "encoding": {"text": {"field": "FaixaIdade", "type": "ordinal"}, "y": {"axis": null, "field": "FaixaIdade", "sort": "descending", "type": "ordinal"}}, "height": 400, "width": 20}, {"data": {"name": "data-39c30d367e83e669df50e6fc8fc47da9"}, "mark": {"type": "bar", "color": "#9B0A51", "size": 50}, "encoding": {"opacity": {"condition": {"param": "param_1", "value": 1, "empty": true}, "value": 0.3}, "tooltip": [{"field": "FaixaIdade", "type": "nominal"}, {"field": "Sexo", "title": "G\u00eanero", "type": "nominal"}, {"field": "Total inscritos", "title": "N\u00famero de Inscritos", "type": "quantitative"}], "x": {"axis": {"grid": false}, "field": "Total inscritos", "scale": {"domain": [0, 215]}, "title": "Total de Inscritos (Feminino)", "type": "quantitative"}, "y": {"axis": null, "field": "FaixaIdade", "sort": "descending", "type": "ordinal"}}, "height": 400, "name": "view_4", "width": 200}], "params": [{"name": "param_1", "select": {"type": "point", "on": "mouseover"}, "views": ["view_3", "view_4"]}], "spacing": 2, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-1190aa2de98843be52ea2fd5ada3415f": [{"FaixaIdade": "Entre 20 e 30 anos", "Edicao": "2024.2", "Sexo": "Masculino", "Total inscritos": 215.0}, {"FaixaIdade": "Entre 31 e 40 anos", "Edicao": "2024.2", "Sexo": "Masculino", "Total inscritos": 178.0}, {"FaixaIdade": "Entre 41 e 50 anos", "Edicao": "2024.2", "Sexo": "Masculino", "Total inscritos": 48.0}, {"FaixaIdade": "Entre 51 e 60 anos", "Edicao": "2024.2", "Sexo": "Masculino", "Total inscritos": 21.0}, {"FaixaIdade": "Entre 61 e 70 anos", "Edicao": "2024.2", "Sexo": "Masculino", "Total inscritos": 17.0}, {"FaixaIdade": "Mais de 70 anos", "Edicao": "2024.2", "Sexo": "Masculino", "Total inscritos": 2.0}], "data-39c30d367e83e669df50e6fc8fc47da9": [{"FaixaIdade": "Entre 20 e 30 anos", "Edicao": "2024.2", "Sexo": "Feminino", "Total inscritos": 194.0}, {"FaixaIdade": "Entre 31 e 40 anos", "Edicao": "2024.2", "Sexo": "Feminino", "Total inscritos": 126.0}, {"FaixaIdade": "Entre 41 e 50 anos", "Edicao": "2024.2", "Sexo": "Feminino", "Total inscritos": 18.0}, {"FaixaIdade": "Entre 51 e 60 anos", "Edicao": "2024.2", "Sexo": "Feminino", "Total inscritos": 5.0}, {"FaixaIdade": "Entre 61 e 70 anos", "Edicao": "2024.2", "Sexo": "Feminino", "Total inscritos": 1.0}, {"FaixaIdade": "Mais de 70 anos", "Edicao": "2024.2", "Sexo": "Feminino", "Total inscritos": 0.0}]}};
+      var embedOpt = {"renderer": "svg", "actions": false, "mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"title": {"font": "Arial"}, "axis": {"labelFont": "Arial", "titleFont": "Arial", "titleFontWeight": "normal", "labelColor": "#888888", "titleColor": "#888888"}, "header": {"labelFont": "Arial", "titleFont": "Arial", "titleFontWeight": "normal"}, "legend": {"labelFont": "Arial", "titleFont": "Arial", "titleFontWeight": "normal", "labelColor": "#888888", "titleColor": "#888888"}, "view": {"stroke": null}}, "data": {"name": "data-63df4cbb2effe0cf57b7e3fb03e73b3e"}, "mark": {"type": "bar", "size": 75}, "encoding": {"color": {"condition": {"test": "(datum.Metric === 'Taxa n\u00e3o aprova\u00e7\u00e3o')", "value": "#ECECEC"}, "field": "Sexo", "legend": {"orient": "bottom", "title": ["G\u00eanero do Examinando"]}, "scale": {"range": ["#9B0A51", "#3BAE96"]}, "type": "nominal"}, "opacity": {"condition": {"param": "param_12", "value": 1, "empty": true}, "value": 0.3}, "order": {"field": "Metric", "sort": "ascending", "type": "nominal"}, "tooltip": [{"field": "Sexo", "title": "G\u00eanero", "type": "nominal"}, {"field": "Metric", "title": "Taxa Representada", "type": "nominal"}, {"field": "Value", "format": ".2%", "title": "Porcentagem", "type": "quantitative"}], "x": {"axis": {"format": "%", "grid": false, "titleAnchor": "end", "titleFontSize": 13}, "field": "Value", "title": "Porcentagem de Aprovados e N\u00e3o Aprovados", "type": "quantitative"}, "y": {"axis": null, "field": "Sexo", "title": "G\u00eanero", "type": "nominal"}}, "height": 200, "params": [{"name": "param_12", "select": {"type": "point", "on": "mouseover"}}], "width": 375, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-63df4cbb2effe0cf57b7e3fb03e73b3e": [{"Sexo": "Feminino", "Metric": "Taxa aprova\u00e7\u00e3o", "Value": 0.0}, {"Sexo": "Masculino", "Metric": "Taxa aprova\u00e7\u00e3o", "Value": 0.11764705882352942}, {"Sexo": "Feminino", "Metric": "Taxa n\u00e3o aprova\u00e7\u00e3o", "Value": 1.0}, {"Sexo": "Masculino", "Metric": "Taxa n\u00e3o aprova\u00e7\u00e3o", "Value": 0.8823529411764706}]}};
+      var embedOpt = {"renderer": "svg", "actions": false, "mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

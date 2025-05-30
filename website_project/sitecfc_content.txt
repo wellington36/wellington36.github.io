@@ -1,0 +1,781 @@
+27º Exame de Qualificação Técnica e 10º Exame
+de Qualificação Técnica para Perícia Contábil
+(2024.2)
+
+Qualificação Técnica Geral
+O 27° Exame de Qualificação Técnica (EQT) para registro no Cadastro Nacional de
+Auditores Independentes (CNAI) do Conselho Federal de Contabilidade (CFC) de 2024 foi
+realizado no dia 30 de setembro em todo o país. No total, esta edição do exame teve pouco
+mais de 1.000 inscritos, dos quais mais de 800 realizaram a prova. Esta edição do exame
+aprovou 138 candidatos, gerando uma taxa de aprovação de 15,77% entre os candidatos
+presentes.
+
+
+Inscritos: 1.036 (100%)
+Presentes: 875 (84,46%)
+Ausentes: 161 (15,54%)
+Aprovados: 138 (15,77%)
+
+
+
+Perfil Socioeconômico dos Participantes
+
+Iniciamos as análises do Exame de Qualificação Técnica Geral descrevendo o perfil
+socioeconômico dos candidatos, sem levar em consideração o resultado obtido pelos
+participantes. Essas informações são declaradas pelos candidatos no formulário de
+inscrição. Neste bloco, analisamos a distribuição por gênero, idade, formação acadêmica e
+Unidade Federativa.
+
+
+Participação por Gênero
+Nome do arquivo: waffle_participacao_genero_QTG_-_Qualificação_Técnica_Geral_2024_2
+O gráfico apresenta a distribuição de gêneros dos inscritos para a prova. Cada pictograma
+representa 1% do total de aprovados. A maior parte dos participantes é do gênero
+masculino, representando 55,69% do total de inscritos, enquanto os inscritos do sexo
+feminino correspondem a 44,31%.
+
+O Censo brasileiro de 2022 mostrou que 48,50% da população brasileira era formada por
+homens,   enquanto   51,50%    eram   mulheres, como é possível verificar no link:
+https://educa.ibge.gov.br/criancas/brasil/nosso-povo/19625-numero-de-homens-e-mulheres.
+html. Dessa forma, a distribuição de gêneros no exame não segue o padrão da população
+brasileira, uma vez que a proporção de homens entre os inscritos é estatisticamente maior
+que a proporção de homens na população nacional.
+
+
+
+
+Participação por Formação Acadêmica
+Nome do arquivo:
+waffle_participacao_formacao_QTG_-_Qualificação_Técnica_Geral_2024_2
+O gráfico apresenta a distribuição da formação acadêmica dos inscritos na prova. Cada
+pictograma representa 1% do total de aprovados. A maioria dos participantes declarou
+possuir graduação como o grau máximo de escolaridade, correspondendo a 75,58% dos
+inscritos. Não houve registros de candidatos com doutorado ou estágio pós-doutoral.
+
+Podemos ver que a grande maioria dos candidatos possui somente graduação, enquanto
+pouco mais de 20% deles possui algum tipo de especialização.
+
+Pirâmide Etária dos Participantes
+Nome do arquivo:
+piramide_participacao_idadegenero_QTG_-_Qualificação_Técnica_Geral_2024_2.html
+O gráfico representa a pirâmide etária dos participantes do exame. A base larga indica uma
+maior participação de jovens, o que evidencia uma grande concentração de inscritos tendo
+entre 20 e 30 anos, com 326 homens e 294 mulheres inscritas. É possível observar,
+novamente, a predominância da participação masculina. Houve 3 inscritos acima de 70
+anos.
+
+A pirâmide etária dos participantes nos mostra que a distribuição das idades entre os
+gêneros é bastante similar. A maioria dos candidatos, de ambos os gêneros, possui entre 20
+e 30 anos. Conforme analisamos os grupos de idades mais avançadas, verificamos que a
+quantidade de candidatos nesses grupos diminui de forma relativamente rápida, até
+chegarmos a poucos: 3, do gênero masculino e nenhuma candidata do gênero feminino
+acima de 70 anos.
+
+Participação por Unidade Federativa (UF)
+Nome do arquivo: hist_participacao_uf_QTG_-_Qualificação_Técnica_Geral_2024_2
+O gráfico apresenta a distribuição dos participantes por Unidade Federativa, agrupados por
+região. Observa-se uma predominância da região Sudeste, com destaque para o estado de
+São Paulo (SP). Alguns estados não registraram participantes, como Maranhão (MA),
+Rondônia (RO), Acre (AC) e Roraima (RR).
+
+
+
+
+Números do Exame
+Neste bloco, apresentaremos análises relacionadas ao resultado da prova e à relação entre
+o resultado obtido e as informações declaradas pelo candidato, como gênero, tempo de
+exercício da profissão e Unidade Federativa de residência.
+
+
+Taxa de Aprovação por Unidade Federativa (UF)
+Nome do arquivo: mapa_aprovacao_estado_QTG_-_Qualificação_Técnica_Geral_2024_2
+O mapa apresenta a taxa de aprovação por Unidade Federativa. O estado com a maior taxa
+foi o Rio Grande do Norte (RN), embora seja importante destacar o baixo número de
+inscritos (6), sendo apenas 2 aprovados. Os estados representados em azul-claro tiveram
+candidatos inscritos, mas nenhum foi aprovado, resultando em uma taxa de aprovação de
+0%. Já os estados ausentes no gráfico de barras e destacados em cinza-claro no mapa não
+registraram participantes.
+
+O mapa acima apresenta a distribuição geográfica dos aprovados no exame. Considerando
+somente as UFs em que houve participantes, as taxas de aprovação variam de 33% a 0%.
+O destaque positivo fica para o Rio Grande do Norte, onde um terço dos candidatos (2 de
+um total de 6) foi aprovado.
+
+Taxa de Aprovação por Gênero
+Nome do arquivo:
+histograma_aprovacao_genero_QTG_-_Qualificação_Técnica_Geral_2024_2
+O gráfico apresenta a taxa de aprovação dos participantes por gênero. A maior taxa foi
+observada entre os homens, com 14,04%, seguida pelas mulheres, com 12,42%.
+
+Podemos ver acima que as taxas de aprovação de homens e mulheres são bastante
+similares, com pouco mais de 14% dos homens sendo aprovados, vis-à-vis pouco mais de
+12% das mulheres.
+
+Taxa de Aprovação por Tempo de Exercício de Profissão
+Nome do arquivo:
+histograma_tempo_profissao_QTG_-_Qualificação_Técnica_Geral_2024_2
+
+
+
+
+Assim como no gráfico anterior, este mostra a taxa de aprovação dos participantes, agora
+de acordo com o tempo de atuação profissional. A maior taxa foi observada entre aqueles
+com 2 e 5 anos de experiência, alcançando 15,85%. Já a menor taxa corresponde aos
+participantes que declararam não possuir tempo de experiência na profissão.
+
+Podemos ver que as taxas de aprovação entre os diferentes tempos de atuação profissional
+são bastante similares (por volta de 15%) para os candidatos com mais de um e menos de
+10 anos de experiência. A taxa de aprovação cai dramaticamente (menos de 2%) para o
+grupo de candidatos sem nenhuma experiência profissional ou (menos de 7%) para o grupo
+com mais de 10 anos de experiência.
+Comissão de Valores Mobiliários (CVM)
+O 27° Exame da Comissão de Valores Mobiliários (CVM) para o registro no Cadastro
+Nacional de Auditores Independentes (CNAI) do Conselho Federal de Contabilidade (CFC)
+de 2024 foi realizado no dia 2 de outubro em todo o país. No total, esta edição do exame
+teve cerca de 800 inscritos, dos quais pouco mais de 700 realizaram a prova. Esta edição
+do exame aprovou 257 candidatos, gerando uma taxa de aprovação de 40,96% entre os
+candidatos presentes.
+
+
+Inscritos: 825 (100%)
+Presentes: 708 (85,82%)
+Ausentes: 117 (14,18%)
+Aprovados: 257 (36,30%)
+
+
+
+Perfil Socioeconômico dos Participantes
+
+Iniciamos as análises do Exame específico da CVM descrevendo o perfil socioeconômico
+dos candidatos, sem levar em consideração o resultado obtido pelos participantes. Essas
+informações são declaradas pelos candidatos no formulário de inscrição. Neste bloco,
+analisamos a distribuição por gênero, idade, formação acadêmica e Unidade Federativa.
+
+
+Participação por Gênero
+Nome do arquivo:
+waffle_participacao_genero_CVM_-_Comissão_de_Valores_Mobiliários_2024_2
+O gráfico apresenta a distribuição de gêneros dos inscritos para a prova. Cada pictograma
+representa 1% do total de aprovados. A maior parte dos participantes é do gênero
+masculino, representando 58,30% do total de inscritos, enquanto os inscritos do sexo
+feminino correspondem a 41,70%.
+
+O Censo brasileiro de 2022 mostrou que 48,50% da população brasileira era formada por
+homens,   enquanto   51,50%    eram   mulheres, como é possível verificar no link:
+https://educa.ibge.gov.br/criancas/brasil/nosso-povo/19625-numero-de-homens-e-mulheres.
+html. Dessa forma, a distribuição de gêneros no exame não segue o padrão da população
+brasileira, uma vez que a proporção de homens entre os inscritos é estatisticamente maior
+que a proporção de homens na população nacional.
+
+
+
+
+Participação por Formação Acadêmica
+Nome do arquivo:
+waffle_participacao_formacao_CVM_-_Comissão_de_Valores_Mobiliários_2024_2
+O gráfico apresenta a distribuição da formação acadêmica dos inscritos na prova. Cada
+pictograma representa 1% do total de aprovados. A maioria dos participantes declarou
+possuir graduação como o grau máximo de escolaridade, correspondendo a 75,64% dos
+inscritos. Menos de 1% possui diploma de doutorado ou estágio pós-doutoral.
+
+Podemos ver que a grande maioria dos candidatos possui somente graduação, enquanto
+pouco mais de 20% deles possui algum tipo de especialização.
+
+Pirâmide Etária dos Participantes
+Nome do arquivo:
+piramide_participacao_idadegenero_CVM_-_Comissão_de_Valores_Mobiliários_2024_2
+O gráfico representa a pirâmide etária dos participantes do exame. A base larga indica uma
+maior participação de jovens, o que evidencia uma grande concentração de inscritos tendo
+entre 20 e 30 anos, com 215 homens e 194 mulheres inscritos. É possível observar,
+novamente, a predominância da participação masculina. Houve 2 inscritos acima de 70
+anos.
+
+A pirâmide etária dos participantes nos mostra que a distribuição das idades entre os
+gêneros é bastante similar, com a maioria dos candidatos de ambos os gêneros possuindo
+entre 20 e 40 anos. Conforme analisamos grupos de idades mais avançados, vemos que a
+quantidade de candidatos nesses grupos diminui de forma relativamente rápida, até
+chegarmos a poucos: 2, do gênero masculino e nenhuma candidata do gênero feminino
+acima de 70 anos.
+
+Participação por Unidade Federativa (UF)
+Nome do arquivo: hist_participacao_uf_CVM_-_Comissão_de_Valores_Mobiliários_2024_2
+O gráfico apresenta a distribuição dos participantes por Unidade Federativa, agrupados por
+região. Observa-se uma predominância da região Sudeste, com destaque para o estado de
+São Paulo (SP). Oito estados não registraram participantes.
+
+
+
+
+Números do Exame
+Neste bloco, apresentaremos análises relacionadas ao resultado da prova e à relação entre
+o resultado obtido e as informações declaradas pelo candidato, como gênero, tempo de
+exercício da profissão e Unidade Federativa de residência.
+
+
+Taxa de Aprovação por Unidade Federativa (UF)
+Nome do arquivo:
+mapa_aprovacao_estado_CVM_-_Comissão_de_Valores_Mobiliários_2024_2
+O mapa apresenta a taxa de aprovação por Unidade Federativa. Os estados com maior
+taxa foram Rio Grande do Norte (RN) e Espírito Santo (ES), embora seja importante
+destacar o baixo número de inscritos em cada um deles (2), com 2 aprovações. Destaca-se
+também o Ceará (CE) com 19 inscritos e 9 aprovados. Os estados representados em
+azul-claro tiveram candidatos inscritos, mas nenhum aprovado, resultando em uma taxa de
+aprovação de 0%. Já os estados ausentes no gráfico de barras e destacados em cinza-claro
+no mapa não registraram participantes.
+
+O mapa acima apresenta a distribuição geográfica dos aprovados no exame. Considerando
+somente as UFs em que houve participantes, as taxas de aprovação variam de 100% a 0%.
+Vale notar que as UFs com maior taxa de aprovação (Rio Grande do Norte e Espírito Santo)
+tiveram somente dois candidatos cada. Por outro lado, São Paulo teve a maior quantidade
+de candidatos (474) e uma das menores taxas de aprovação (menos de 30%).
+
+Taxa de Aprovação por Gênero
+Nome do arquivo:
+histograma_aprovacao_genero_CVM_-_Comissão_de_Valores_Mobiliários_2024_2
+O gráfico apresenta a taxa de aprovação dos participantes por gênero. A maior taxa foi
+observada entre os homens, com 33,47%, seguida pelas mulheres, com 27,91%.
+
+Podemos ver acima que as taxas de aprovação de homens e mulheres são bastante
+similares, com pouco mais de 33% dos homens sendo aprovados, vis-à-vis pouco menos de
+28% das mulheres.
+
+Taxa de Aprovação por Tempo de Exercício de Profissão
+Nome do arquivo:
+histograma_tempo_profissao_CVM_-_Comissão_de_Valores_Mobiliários_2024_2
+
+
+
+
+Assim como no gráfico anterior, este mostra a taxa de aprovação dos participantes, agora
+de acordo com o tempo de atuação profissional. A maior taxa foi observada entre aqueles
+com mais de 10 anos de experiência, alcançando 36,79%. Já a menor taxa corresponde
+aos participantes que declararam ter de 2 a 5 anos de experiência na profissão.
+
+Podemos observar que os candidatos com mais de 10 anos de experiência profissional ou
+nenhuma experiência apresentam as maiores taxas de aprovação, enquanto candidatos
+que possuem entre 2 e 5 anos de experiência apresentam a menor taxa.
+
+
+
+
+Banco Central do Brasil (BCB)
+
+O 27° Exame do Banco Central do Brasil (BCB) para o registro no Cadastro Nacional de
+Auditores Independentes (CNAI) do Conselho Federal de Contabilidade (CFC) de 2024 foi
+realizado no dia 3 de outubro em todo o país. No total, esta edição do exame teve 132
+inscritos, dos quais mais de 100 realizaram a prova. Esta edição do exame aprovou 5
+candidatos, gerando uma taxa de aprovação de 5,61% entre os candidatos presentes.
+
+Inscritos: 132 (100%)
+Presentes: 107 (81,06%)
+Ausentes: 25 (18,94%)
+Aprovados: 5 (4,67%)
+
+
+
+Perfil Socioeconômico dos Participantes
+
+Iniciamos as análises do Exame específico do BCB descrevendo o perfil socioeconômico
+dos candidatos, sem levar em consideração o resultado obtido pelos participantes. Essas
+informações são declaradas pelos candidatos no formulário de inscrição. Neste bloco,
+analisamos a distribuição por gênero, idade, formação acadêmica e Unidade Federativa.
+Participação por Gênero
+Nome do arquivo: waffle_participacao_genero_BCB_-_Banco_Central_do_Brasil_2024_2
+
+
+
+
+O gráfico apresenta a distribuição de gêneros dos inscritos para a prova. Cada pictograma
+representa 1% do total de aprovados. A maior parte dos participantes é do gênero
+masculino, representando 62,12% do total de inscritos, enquanto os inscritos do sexo
+feminino correspondem a 37,88%.
+
+O Censo brasileiro de 2022 mostrou que 48,50% da população brasileira era formada por
+homens,   enquanto   51,50%    eram   mulheres, como é possível verificar no link:
+https://educa.ibge.gov.br/criancas/brasil/nosso-povo/19625-numero-de-homens-e-mulheres.
+html. Dessa forma, a distribuição de gêneros no exame não segue o padrão da população
+brasileira, uma vez que a proporção de homens entre os inscritos é estatisticamente maior
+que a proporção de homens na população nacional.
+
+
+
+
+Participação por Formação Acadêmica
+Nome do arquivo: waffle_participacao_formacao_BCB_-_Banco_Central_do_Brasil_2024_2
+O gráfico apresenta a distribuição da formação acadêmica dos inscritos na prova. Cada
+pictograma representa 1% do total de aprovados. A maioria dos participantes declarou
+possuir graduação como o grau máximo de escolaridade, correspondendo a 72,73% dos
+inscritos. Não houve registros de candidatos com estágio pós-doutoral.
+
+Podemos ver que a grande maioria dos candidatos possui somente a graduação, enquanto
+pouco mais de 20% deles possui algum tipo de especialização.
+
+Pirâmide Etária dos Participantes
+Nome do arquivo:
+piramide_participacao_idadegenero_BCB_-_Banco_Central_do_Brasil_2024_2
+O gráfico representa a pirâmide etária dos participantes do exame. A base larga indica uma
+maior participação de jovens, o que evidencia uma grande concentração de inscritos tendo
+entre 20 e 30 anos, com 38 homens e 25 mulheres inscritas. É possível observar,
+novamente, a predominância da participação masculina. Houve 2 inscritos acima de 60
+anos.
+
+A pirâmide etária dos participantes nos mostra que a distribuição das idades entre os
+gêneros é bastante similar, com a maioria dos candidatos de ambos os gêneros possuindo
+entre 20 e 30 anos. Conforme analisamos grupos de idades mais avançados, vemos que a
+quantidade de candidatos nestes grupos diminui de forma relativamente rápida, até
+chegarmos a poucos: 6, do gênero masculino e nenhuma candidata acima de 50 anos.
+
+Participação por Unidade Federativa (UF)
+Nome do arquivo: hist_participacao_uf_BCB_-_Banco_Central_do_Brasil_2024_2
+O gráfico apresenta a distribuição dos participantes por Unidade Federativa, agrupados por
+região. Observa-se uma predominância da região Sudeste, com destaque para o estado de
+São Paulo (SP), seguido pelo Rio de Janeiro (RJ). Também houve participações das
+Unidades Federativas de Minas Gerais (MG), Paraná (PR), Rio Grande do Sul (RS), Santa
+Catarina (SC), Pernambuco (PE), Ceará (CE), Distrito Federal (DF), Pará (PA) e Amazonas
+(AM).
+
+
+
+
+Números do Exame
+Neste bloco, apresentaremos análises relacionadas ao resultado da prova e à relação entre
+o resultado obtido e as informações declaradas pelo candidato, como gênero, tempo de
+exercício da profissão e Unidade Federativa de residência.
+
+
+Taxa de Aprovação por Unidade Federativa (UF)
+Nome do arquivo: mapa_aprovacao_estado_BCB_-_Banco_Central_do_Brasil_2024_2
+O mapa apresenta a taxa de aprovação por Unidade Federativa. A Unidade Federativa com
+maior taxa de aprovação foi o Distrito Federal (DF) com 20%, embora seja importante
+destacar o baixo número de inscritos (10), sendo apenas 2 aprovados. Os estados
+representados em azul-claro tiveram candidatos inscritos, mas nenhum aprovado,
+resultando em uma taxa de aprovação de 0%. Já os estados ausentes no gráfico de barras
+e destacados em cinza-claro no mapa não registraram participantes.
+
+O mapa acima apresenta a distribuição geográfica dos aprovados no exame. Entre os 6
+candidatos aprovados, 2 eram do Distrito Federal e 3, de São Paulo.
+
+Taxa de Aprovação por Gênero
+Nome do arquivo:
+histograma_aprovacao_genero_BCB_-_Banco_Central_do_Brasil_2024_2
+O gráfico apresenta a taxa de aprovação dos participantes por gênero. A maior taxa foi
+observada entre os homens, com 4,88%, seguida pelas mulheres, com 2,00%.
+
+Podemos ver acima que as taxas de aprovação de homens e mulheres são bastante
+similares, ainda que extremamente baixas. Pouco menos de 5% dos homens foram
+aprovados, enquanto a taxa de aprovação das mulheres ficou em 2%.
+
+Taxa de Aprovação por Tempo de Exercício de Profissão
+Nome do arquivo: histograma_tempo_profissao_BCB_-_Banco_Central_do_Brasil_2024_2
+
+
+
+
+Assim como no gráfico anterior, este mostra a taxa de aprovação dos participantes, agora
+de acordo com o tempo de atuação profissional. A maior taxa foi observada entre aqueles
+com mais de 10 anos de experiência, alcançando 6,82%. Por outro lado, não há aprovação
+entre candidatos que declararam ter menos de 5 anos de experiência na profissão.
+
+Podemos observar que todos os aprovados possuíam mais de 5 anos de experiência
+profissional, sendo que a maior parte deles possuía mais de 10 anos.
+Superintendência Nacional de Previdência Complementar
+(Previc)
+O 27° Exame de Superintendência Nacional de Previdência Complementar (Previc) para o
+registro no Cadastro Nacional de Auditores Independentes (CNAI) do Conselho Federal de
+Contabilidade (CFC) de 2024 foi realizado no dia 5 de outubro em todo o país. No total, esta
+edição do exame teve 61 inscritos, dos quais 46 realizaram a prova. Esta edição do exame
+aprovou 1 candidato, gerando uma taxa de aprovação de 2,17% entre os candidatos
+presentes.
+
+Inscritos: 61 (100%)
+Presentes: 46 (75,41%)
+Ausentes: 15 (24,59%)
+Aprovados: 1 (2,17%)
+
+
+
+Perfil Socioeconômico dos Participantes
+
+Iniciamos as análises do Exame específico da Previc descrevendo o perfil socioeconômico
+dos candidatos, sem levar em consideração o resultado obtido pelos participantes. Essas
+informações são declaradas pelos candidatos no formulário de inscrição. Neste bloco,
+analisamos a distribuição por gênero, idade, formação acadêmica e Unidade Federativa.
+
+
+Participação por Gênero
+Nome do arquivo:
+waffle_participacao_genero_PREVIC_-_Superintendência_Nacional_de_Previdência_Comp
+lementar_2024_2
+O gráfico apresenta a distribuição de gêneros dos inscritos para a prova. Cada pictograma
+representa 1% do total de aprovados. A maior parte dos participantes é do gênero
+masculino, representando 67,21% do total de inscritos, enquanto os inscritos do sexo
+feminino correspondem a 32,79%.
+
+O Censo brasileiro de 2022 mostrou que 48,50% da população brasileira era formada por
+homens,   enquanto   51,50%    eram   mulheres, como é possível verificar no link:
+https://educa.ibge.gov.br/criancas/brasil/nosso-povo/19625-numero-de-homens-e-mulheres.
+html. Dessa forma, a distribuição de gêneros no exame não segue o padrão da população
+brasileira, uma vez que a proporção de homens entre os inscritos é estatisticamente maior
+que a proporção de homens na população nacional.
+
+
+
+
+Participação por Formação Acadêmica
+Nome do arquivo:
+waffle_participacao_formacao_PREVIC_-_Superintendência_Nacional_de_Previdência_Co
+mplementar_2024_2
+O gráfico apresenta a distribuição da formação acadêmica dos inscritos na prova. Cada
+pictograma representa 1% do total de aprovados. A maioria dos participantes declarou
+possuir graduação como o grau máximo de escolaridade, correspondendo a 63,93% dos
+inscritos. Não houve registros de candidatos com doutorado.
+
+Podemos ver que a grande maioria dos candidatos possui somente graduação, enquanto
+pouco menos de 30% deles possui algum tipo de especialização.
+
+Pirâmide Etária dos Participantes
+Nome do arquivo:
+piramide_participacao_idadegenero_PREVIC_-_Superintendência_Nacional_de_Previdênci
+a_Complementar_2024_2
+O gráfico representa a pirâmide etária dos participantes do exame. A base larga indica uma
+maior participação de jovens, o que evidencia uma grande concentração de inscritos
+masculinos, 15 homens, tendo entre 31 e 40 anos, e uma maior concentração de inscritos
+femininos, 9 mulheres, tendo entre 20 e 30 anos. É possível observar, novamente, a
+predominância da participação masculina. Houve 2 inscritos acima de 60 anos.
+
+A pirâmide etária dos participantes nos mostra que a distribuição das idades entre os
+gêneros é consideravelmente diferente. Para os homens, o grupo etário mais representado
+é o de 31 a 40 anos, enquanto para as mulheres é o grupo de 20 a 30 anos. Com exceção
+do grupo de homens que possuem entre 20 e 30 anos, em ambos os gêneros a participação
+diminui com o aumento da idade. Vale notar também que não há candidatos com mais de
+70 anos.
+
+Participação por Unidade Federativa (UF)
+Nome do arquivo:
+hist_participacao_uf_PREVIC_-_Superintendência_Nacional_de_Previdência_Complement
+ar_2024_2
+O gráfico apresenta a distribuição dos participantes por Unidade Federativa, agrupados por
+região. Observa-se uma predominância da região Sudeste, com destaque para o estado de
+São Paulo (SP), seguido por Minas Gerais (MG) e Rio de Janeiro (RJ). Também houve
+participações das Unidades Federativas de Paraná (PR), Rio Grande do Sul (RS), Santa
+Catarina (SC), Pernambuco (PE), Ceará (CE), Piauí (PI), Goiás (GO) e Distrito Federal
+(DF).
+
+
+
+
+Números do Exame
+Neste bloco, apresentaremos análises relacionadas ao resultado da prova e à relação entre
+o resultado obtido e as informações declaradas pelo candidato, como gênero, tempo de
+exercício da profissão e Unidade Federativa de residência.
+
+
+Taxa de Aprovação por Unidade Federativa (UF)
+Nome do arquivo:
+mapa_aprovacao_estado_PREVIC_-_Superintendência_Nacional_de_Previdência_Comple
+mentar_2024_2
+O mapa apresenta a taxa de aprovação por Unidade Federativa. O estado com a maior taxa
+foi o Piauí (PI), embora seja importante destacar que só houve 1 aprovado no total. Os
+estados representados em azul-claro tiveram candidatos inscritos, mas nenhum aprovado,
+resultando em uma taxa de aprovação de 0%. Já os estados ausentes no gráfico de barras
+e destacados em cinza-claro no mapa não registraram participantes.
+
+Neste exame, somente um candidato, do Piauí (PI), foi aprovado. Como este foi o único
+candidato do seu Estado, podemos observar que a taxa de aprovação do PI foi de 100%,
+enquanto todas as outras UFs com candidatos apresentaram uma taxa de 100% de
+reprovação.
+
+Taxa de Aprovação por Gênero
+Nome do arquivo:
+histograma_aprovacao_genero_PREVIC_-_Superintendência_Nacional_de_Previdência_C
+omplementar_2024_2
+O gráfico apresenta a taxa de aprovação dos participantes por gênero. A maior taxa foi
+observada entre os homens, com 2,44%, seguida pelas mulheres, com 0%. É importante
+destacar que houve apenas 1 aprovado no total.
+
+Como neste exame houve somente um aprovado, um homem, a taxa de reprovação das
+mulheres foi de 100%.
+
+Taxa de Aprovação por Tempo de Exercício de Profissão
+Nome do arquivo:
+histograma_tempo_profissao_PREVIC_-_Superintendência_Nacional_de_Previdência_Com
+plementar_2024_2
+
+
+
+
+Assim como no gráfico anterior, este mostra a taxa de aprovação dos participantes, agora
+de acordo com o tempo de atuação profissional. A maior taxa foi observada entre aqueles
+com mais de 10 anos de experiência, alcançando 2,86%. É importante destacar que só
+houve 1 aprovado no total.
+
+Podemos observar que o único aprovado possuía mais de 10 anos de experiência.
+
+
+
+
+Superintendência de Seguros Privados (Susep)
+O 27° Exame de Superintendência de Seguros Privados (Susep) para registro no Cadastro
+Nacional de Auditores Independentes (CNAI) do Conselho Federal de Contabilidade (CFC)
+de 2024 foi realizado no dia 4 de outubro em todo o país. No total, esta edição do exame
+teve 58 inscritos, dos quais 50 realizaram a prova. Esta edição do exame aprovou 4
+candidatos, gerando uma taxa de aprovação de 8% entre os candidatos presentes.
+
+
+Inscritos: 58 (100%)
+Presentes: 50 (86,21%)
+Ausentes: 8 (13,79%)
+Aprovados: 4 (8,00%)
+
+
+
+
+Perfil Socioeconômico dos Participantes
+
+Iniciamos as análises do Exame específico da Susep descrevendo o perfil socioeconômico
+dos candidatos, sem levar em consideração o resultado obtido pelos participantes. Essas
+informações são declaradas pelos candidatos no formulário de inscrição. Neste bloco,
+analisamos a distribuição por gênero, idade, formação acadêmica e Unidade Federativa.
+Participação por Gênero
+Nome do arquivo:
+waffle_participacao_genero_SUSEP_-_Superintendência_de_Seguros_Privados_2024_2
+
+
+
+
+O gráfico apresenta a distribuição de gêneros dos inscritos para a prova. Cada pictograma
+representa 1% do total de aprovados. A maior parte dos participantes é do gênero
+masculino, representando 58,62% do total de inscritos, enquanto os inscritos do sexo
+feminino correspondem a 41,38%.
+
+O Censo brasileiro de 2022 mostrou que 48,50% da população brasileira era formada por
+homens,   enquanto   51,50%    eram   mulheres, como é possível verificar no link:
+https://educa.ibge.gov.br/criancas/brasil/nosso-povo/19625-numero-de-homens-e-mulheres.
+html. Dessa forma, a distribuição de gêneros no exame não segue o padrão da população
+brasileira, uma vez que a proporção de homens entre os inscritos é estatisticamente maior
+que a proporção de homens na população nacional.
+Participação por Formação Acadêmica
+Nome do arquivo:
+waffle_participacao_formacao_SUSEP_-_Superintendência_de_Seguros_Privados_2024_2
+
+
+
+
+O gráfico apresenta a distribuição da formação acadêmica dos inscritos na prova. Cada
+pictograma representa 1% do total de aprovados. A maioria dos participantes declarou
+possuir graduação como o grau máximo de escolaridade, correspondendo a 62,07% dos
+inscritos. Não houve registros de candidatos com doutorado.
+
+Podemos ver que a grande maioria dos candidatos possui somente graduação, enquanto
+pouco mais de 30% deles possui algum tipo de especialização.
+
+Pirâmide Etária dos Participantes
+Nome do arquivo:
+piramide_participacao_idadegenero_SUSEP_-_Superintendência_de_Seguros_Privados_2
+024_2
+O gráfico representa a pirâmide etária dos participantes do exame. A base larga indica uma
+maior participação de jovens, o que evidencia uma grande concentração de inscritos tendo
+entre 31 e 40 anos, com 17 homens e 10 mulheres inscritas. É possível observar,
+novamente, a predominância da participação masculina. Houve 5 inscritos do sexo
+masculino acima de 50 anos.
+
+Devido à baixa quantidade de candidatos, a pirâmide etária não apresenta nenhum formato
+claro. Vale notar, no entanto, que todos os candidatos possuem menos de 60 anos. Além
+disso, o grupo de idades mais representativo em ambos os gêneros é o de pessoas entre
+31 e 40 anos.
+
+Participação por Unidade Federativa (UF)
+Nome do arquivo:
+hist_participacao_uf_SUSEP_-_Superintendência_de_Seguros_Privados_2024_2
+O gráfico apresenta a distribuição dos participantes por Unidade Federativa, agrupados por
+região. Observa-se uma predominância da região Sudeste, com destaque para o estado de
+São Paulo (SP), seguido pelo Rio de Janeiro (RJ). Também houve participações das
+Unidades Federativas de Minas Gerais (MG), Paraná (PR), Rio Grande do Sul (RS), Santa
+Catarina (SC), Ceará (CE), Goiás (GO) e Distrito Federal (DF).
+
+
+
+
+Números do Exame
+Neste bloco, apresentaremos análises relacionadas ao resultado da prova e à relação entre
+o resultado obtido e as informações declaradas pelo candidato, como gênero, tempo de
+exercício da profissão e Unidade Federativa de residência.
+
+
+Taxa de Aprovação por Unidade Federativa (UF)
+Nome do arquivo:
+mapa_aprovacao_estado_SUSEP_-_Superintendência_de_Seguros_Privados_2024_2
+O mapa apresenta a taxa de aprovação por Unidade Federativa. O estado com a maior taxa
+foi São Paulo (SP), contendo todos os 4 aprovados da edição. Os estados representados
+em azul-claro tiveram candidatos inscritos, mas nenhum aprovado, resultando em uma taxa
+de aprovação de 0%. Já os estados ausentes no gráfico de barras e destacados em
+cinza-claro no mapa não registraram participantes.
+
+Neste exame, todos os candidatos aprovados (4) foram oriundos do estado de São Paulo.
+Como havia 36 inscritos, a taxa de aprovação deste estado foi de mais de 10%, enquanto,
+em todos os outros, a taxa de reprovação foi de 100%.
+
+Taxa de Aprovação por Gênero
+Nome do arquivo:
+histograma_aprovacao_genero_SUSEP_-_Superintendência_de_Seguros_Privados_2024_
+2
+O gráfico apresenta a taxa de aprovação dos participantes por gênero. A maior taxa foi
+observada entre os homens, com 11,76%, seguida pelas mulheres, com 0%. É importante
+destacar que houve apenas 4 aprovados no total.
+
+Podemos ver acima que todos os 4 aprovados no exame eram homens, gerando uma taxa
+de aprovação, neste gênero, de pouco mais de 10% e uma taxa de 100% de reprovação
+entre as mulheres.
+
+Taxa de Aprovação por Tempo de Exercício de Profissão
+Nome do arquivo:
+histograma_tempo_profissao_SUSEP_-_Superintendência_de_Seguros_Privados_2024_2
+
+
+
+
+Assim como no gráfico anterior, este mostra a taxa de aprovação dos participantes, agora
+de acordo com o tempo de atuação profissional. A maior taxa foi observada entre aqueles
+com 1 e 2 anos de experiência, alcançando 50%, sendo importante ressaltar o baixo
+número de inscritos (2) nessa faixa, com apenas 1 aprovado. Por outro lado, não foi
+registrada aprovação entre os participantes que declararam ter entre 2 e 5 anos de
+experiência na profissão.
+
+Podemos ver que a taxa de aprovação dos candidatos sem nenhuma experiência
+profissional é a maior entre todos os grupos. Metade dos candidatos sem experiência foi
+aprovada, enquanto a taxa entre os candidatos com mais de 10 anos de aprovação foi de
+menos de 10%.
+
+
+
+
+Perito Contábil
+O 10° Exame de Qualificação Técnica (EQT) para o registro no Cadastro Nacional de
+Peritos Contábeis (CNPC) do Conselho Federal de Contabilidade (CFC) de 2024 foi
+realizado no dia 1º de outubro em todo o país. No total, esta edição do exame teve pouco
+mais de 400 inscritos, dos quais menos de 300 realizaram a prova. Esta edição do exame
+aprovou 53 candidatos, gerando uma taxa de aprovação de 19% entre os candidatos
+presentes.
+
+
+Inscritos: 401 (100%)
+Presentes: 279 (69,58%)
+Ausentes: 122 (30,42%)
+Aprovados: 53 (19,00%)
+
+
+Perfil Socioeconômico dos Participantes
+
+Iniciamos as análises do Exame de Qualificação Técnica para Perícia Contábil descrevendo
+o perfil socioeconômico dos candidatos, sem levar em consideração o resultado obtido
+pelos participantes. Essas informações são declaradas pelos candidatos no formulário de
+inscrição. Neste bloco, analisamos a distribuição por gênero, idade, formação acadêmica e
+Unidade Federativa.
+
+
+Participação por Gênero
+Nome do arquivo:
+waffle_participacao_genero_Qualificação_Técnica_Geral_para_Perito_Contábil_2024_2
+
+
+
+
+O gráfico apresenta a distribuição de gêneros dos inscritos para a prova. Cada pictograma
+representa 1% do total de aprovados. A maior parte dos participantes é do gênero
+masculino, representando 61,60% do total de inscritos, enquanto os inscritos do sexo
+feminino correspondem a 38,40%.
+
+O Censo brasileiro de 2022 mostrou que 48,50% da população brasileira era formada por
+homens,   enquanto    51,50%   eram   mulheres, como é possível verificar no link:
+https://educa.ibge.gov.br/criancas/brasil/nosso-povo/19625-numero-de-homens-e-mulheres.
+html. Dessa forma, a distribuição de gêneros no exame não segue o padrão da população
+brasileira, uma vez que a proporção de homens entre os inscritos é estatisticamente maior
+que a proporção de homens na população nacional.
+Participação por Formação Acadêmica
+Nome do arquivo:
+waffle_participacao_formacao_CVM_-_Comissão_de_Valores_Mobiliários_2024_2
+
+
+
+
+O gráfico apresenta a distribuição da formação acadêmica dos inscritos na prova. Cada
+pictograma representa 1% do total de aprovados. A maioria dos participantes declarou
+possuir especialização como o grau máximo de escolaridade, correspondendo a 50,37%
+dos inscritos. Não houve registros de candidatos com estágio pós-doutoral.
+
+Podemos ver que mais da metade dos candidatos possui algum tipo de especialização,
+enquanto pouco menos de 40% possui somente a graduação completa.
+
+Pirâmide Etária dos Participantes
+Nome do arquivo:
+piramide_participacao_idadegenero_Qualificação_Técnica_Geral_para_Perito_Contábil_20
+24_2
+O gráfico apresenta a distribuição etária dos participantes do exame, destacando uma maior
+concentração de inscritos nas faixas de 31 a 40 anos, seguida pelas faixas de 41 a 50 anos
+e 20 a 30 anos. Foram registrados 82 homens e 67 mulheres na faixa de 31 a 40 anos. É
+possível observar, novamente, a predominância da participação masculina. Houve 4
+inscritos acima de 70 anos.
+
+A pirâmide etária dos participantes nos mostra que a distribuição das idades entre os
+gêneros é bastante similar, com a maioria dos candidatos de ambos os gêneros possuindo
+entre 31 e 40 anos. Conforme analisamos os grupos de idades mais avançadas, a partir do
+grupo entre 31 e 40 anos, vemos que a quantidade de candidatos diminui de forma
+relativamente rápida, até chegarmos a 4 candidatos com mais de 70 (3 homens e 1 mulher).
+
+Participação por Unidade Federativa (UF)
+Nome do arquivo:
+hist_participacao_uf_Qualificação_Técnica_Geral_para_Perito_Contábil_2024_2
+O gráfico apresenta a distribuição dos participantes por Unidade Federativa, agrupados por
+região. Observa-se uma predominância da região Sudeste e Sul, com destaque para o
+estado de São Paulo (SP). Oito estados registraram menos de cinco participantes, sendo
+eles Piauí (PI), Paraíba (PB), Sergipe (SE), Rondônia (RO), Acre (AC), Amapá (AP) e
+Roraima (RR).
+
+
+
+
+Números do Exame
+Neste bloco, apresentaremos análises relacionadas ao resultado da prova e à relação entre
+o resultado obtido e as informações declaradas pelo candidato, como gênero, tempo de
+exercício da profissão e Unidade Federativa de residência.
+
+
+Taxa de Aprovação por Unidade Federativa (UF)
+Nome do arquivo:
+mapa_aprovacao_estado_Qualificação_Técnica_Geral_para_Perito_Contábil_2024_2
+O mapa apresenta a taxa de aprovação por Unidade Federativa. O estado com a maior taxa
+foi o Acre (AC), embora seja importante destacar o baixo número de inscritos (1), sendo
+apenas 1 aprovado. O estado de Santa Catarina (SC) também se destaca por possuir 10
+inscritos e 4 aprovados. Os estados representados em azul-claro tiveram candidatos
+inscritos, mas nenhum aprovado, resultando em uma taxa de aprovação de 0%.
+
+
+
+
+Taxa de Aprovação por Gênero
+Nome do arquivo:
+histograma_aprovacao_genero_Qualificação_Técnica_Geral_para_Perito_Contábil_2024_2
+O gráfico apresenta a taxa de aprovação dos participantes por gênero. A maior taxa foi
+observada entre os homens, com 16,60%, seguida pelas mulheres, com 7,79%.
+
+Podemos ver acima que as taxas de aprovação de homens e mulheres são
+substancialmente diferentes, tendo os homens atingido um total de 16% de aprovação e as
+mulheres pouco menos da metade desse valor.
+
+Taxa de Aprovação por Tempo de Exercício de Profissão
+Nome do arquivo:
+histograma_tempo_profissao_Qualificação_Técnica_Geral_para_Perito_Contábil_2024_2
+
+
+
+
+Assim como no gráfico anterior, este mostra a taxa de aprovação dos participantes, agora
+de acordo com o tempo de atuação profissional. A maior taxa foi observada entre aqueles
+com 2 e 5 anos de experiência, alcançando 20,37%. Já a menor taxa corresponde aos
+participantes que declararam ter mais de 5 anos de experiência na profissão.
+
+Analisando as taxas de aprovação entre os diferentes períodos de experiência profissional,
+podemos ver que a taxa de aprovação diminui conforme aumenta o tempo de experiência
+dos candidatos, com exceção do grupo de candidatos que possuem entre 2 e 5 anos de
+experiência, no qual a taxa é substancialmente maior que as demais (20%).
+
