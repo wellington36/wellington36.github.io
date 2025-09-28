@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .navigation {
+            padding: 30px;
+            background: #f8f9fa;
+        }
+
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .nav-category {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .chart-link {
+            display: block;
+            padding: 12px 15px;
+            margin: 8px 0;
+            background: #f8f9fa;
+            color: #2c3e50;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border-left: 4px solid #3498db;
+        }
+
+        .chart-link:hover {
+            background: #3498db;
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .chart-link::before {
+            content: "📊 ";
+            margin-right: 8px;
+        }
+
+        .iframe-container {
+            display: none;
+            padding: 30px;
+            background: white;
+        }
+
+        .iframe-container.active {
+            display: block;
+        }
+
+        .iframe-container iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            transition: background 0.3s ease;
+            font-weight: 500;
+        }
+
+        .back-button:hover {
+            background: #2980b9;
+        }
+
+        .back-button::before {
+            content: "← ";
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .iframe-container iframe {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>ENARE 2024</h1>
+            <p>Visualização interativa de dados médicos e multiprofissionais com e sem Análise Curricular</p>
+        </div>
+
+        <div id="navigation" class="navigation">
+            <div class="nav-grid">
+                <div class="nav-category">
+                    <div class="category-title">Aprovados em Cota</div>
+                    <a href="#" class="chart-link" onclick="showChart('donut_cota_medica')">Médica 2024</a>
+                    <a href="#" class="chart-link" onclick="showChart('donut_cota_multi')">MultiUniprofissional 2024</a>
+                </div>
+
+                <div class="nav-category">
+                    <div class="category-title">Aprovados em Isenção</div>
+                    <a href="#" class="chart-link" onclick="showChart('donut_isencao_medica')">Médica 2024</a>
+                    <a href="#" class="chart-link" onclick="showChart('donut_isencao_multi')">MultiUniprofissional 2024</a>
+                </div>
+
+                <div class="nav-category">
+                    <div class="category-title">Histogramas - Ano Diploma</div>
+                    <a href="#" class="chart-link" onclick="showChart('hist_anodiploma_medica')">Médica 2024</a>
+                    <a href="#" class="chart-link" onclick="showChart('hist_anodiploma_multi')">MultiUniprofissional 2024</a>
+                </div>
+
+                <div class="nav-category">
+                    <div class="category-title">Histogramas - Cor/Raça</div>
+                    <a href="#" class="chart-link" onclick="showChart('hist_corraca_medica')">Médica 2024</a>
+                    <a href="#" class="chart-link" onclick="showChart('hist_corraca_multi')">MultiUniprofissional 2024</a>
+                </div>
+
+                <div class="nav-category">
+                    <div class="category-title">Histogramas - Gênero</div>
+                    <a href="#" class="chart-link" onclick="showChart('hist_genero_medica')">Médica 2024</a>
+                    <a href="#" class="chart-link" onclick="showChart('hist_genero_multi')">MultiUniprofissional 2024</a>
+                </div>
+
+                <div class="nav-category">
+                    <div class="category-title">Mapa dos Aprovados</div>
+                    <a href="#" class="chart-link" onclick="showChart('mapa_estado_medica')">Médica 2024</a>
+                    <a href="#" class="chart-link" onclick="showChart('mapa_estado_multi')">MultiUniprofissional 2024</a>
+                </div>
+
+                <div class="nav-category">
+                    <div class="category-title">Pirâmides de Idade e Sexo</div>
+                    <a href="#" class="chart-link" onclick="showChart('piramide_idadesexo_medica')">Médica 2024</a>
+                    <a href="#" class="chart-link" onclick="showChart('piramide_idadesexo_multi')">MultiUniprofissional 2024</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chart containers -->
+        <div id="donut_cota_medica" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/donut_cota_Médica_2024.html"></iframe>
+        </div>
+
+        <div id="donut_cota_multi" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/donut_cota_MultiUniprofissional_2024.html"></iframe>
+        </div>
+
+        <div id="donut_isencao_medica" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/donut_isencao_Médica_2024.html"></iframe>
+        </div>
+
+        <div id="donut_isencao_multi" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/donut_isencao_MultiUniprofissional_2024.html"></iframe>
+        </div>
+
+        <div id="hist_anodiploma_medica" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/histograma_anodiploma_Médica_2024.html"></iframe>
+        </div>
+
+        <div id="hist_anodiploma_multi" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/histograma_anodiploma_MultiUniprofissional_2024.html"></iframe>
+        </div>
+
+        <div id="hist_corraca_medica" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/histograma_corraca_Médica_2024.html"></iframe>
+        </div>
+
+        <div id="hist_corraca_multi" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/histograma_corraca_MultiUniprofissional_2024.html"></iframe>
+        </div>
+
+        <div id="hist_genero_medica" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/histograma_genero_Médica_2024.html"></iframe>
+        </div>
+
+        <div id="hist_genero_multi" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/histograma_genero_MultiUniprofissional_2024.html"></iframe>
+        </div>
+
+        <div id="mapa_estado_medica" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/mapa_estado_Médica_2024.html"></iframe>
+        </div>
+
+        <div id="mapa_estado_multi" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/mapa_estado_MultiUniprofissional_2024.html"></iframe>
+        </div>
+
+        <div id="piramide_idadesexo_medica" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/piramide_idadesexo_Médica_2024.html"></iframe>
+        </div>
+
+        <div id="piramide_idadesexo_multi" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/piramide_idadesexo_MultiUniprofissional_2024.html"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function showChart(chartId) {
+            // Hide navigation
+            document.getElementById('navigation').style.display = 'none';
+            
+            // Hide all chart containers
+            const containers = document.querySelectorAll('.iframe-container');
+            containers.forEach(container => {
+                container.classList.remove('active');
+            });
+            
+            // Show selected chart
+            document.getElementById(chartId).classList.add('active');
+        }
+
+        function showNavigation() {
+            // Show navigation
+            document.getElementById('navigation').style.display = 'block';
+            
+            // Hide all chart containers
+            const containers = document.querySelectorAll('.iframe-container');
+            containers.forEach(container => {
+                container.classList.remove('active');
+            });
+        }
+
+        // Prevent default link behavior
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a[href="#"]');
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
