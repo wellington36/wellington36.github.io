@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 80%;
             margin: 0 auto;
             background: white;
             border-radius: 15px;
@@ -193,6 +193,13 @@
                     <a href="#" class="chart-link" onclick="showChart('hist_genero_medica')">Médica 2024</a>
                     <a href="#" class="chart-link" onclick="showChart('hist_genero_multi')">MultiUniprofissional 2024</a>
                 </div>
+                
+                <div class="nav-category">
+                    <div class="category-title">Histogramas - Idade</div>
+                    <a href="#" class="chart-link" onclick="showChart('hist_idade_medica')">Médica 2024</a>
+                    <a href="#" class="chart-link" onclick="showChart('hist_idade_multi')">MultiUniprofissional 2024</a>
+                </div>
+
 
                 <div class="nav-category">
                     <div class="category-title">Mapa dos Aprovados</div>
@@ -204,6 +211,18 @@
                     <div class="category-title">Pirâmides de Idade e Sexo</div>
                     <a href="#" class="chart-link" onclick="showChart('piramide_idadesexo_medica')">Médica 2024</a>
                     <a href="#" class="chart-link" onclick="showChart('piramide_idadesexo_multi')">MultiUniprofissional 2024</a>
+                </div>
+
+                <div class="nav-category">
+                    <div class="category-title">Distribuição por Cor/Raça</div>
+                    <a href="#" class="chart-link" onclick="showChart('waffle_corraca_medica')">Médica 2024</a>
+                    <a href="#" class="chart-link" onclick="showChart('waffle_corraca_multi')">MultiUniprofissional 2024</a>
+                </div>
+
+                <div class="nav-category">
+                    <div class="category-title">Distribuição por Gênero</div>
+                    <a href="#" class="chart-link" onclick="showChart('waffle_genero_medica')">Médica 2024</a>
+                    <a href="#" class="chart-link" onclick="showChart('waffle_genero_multi')">MultiUniprofissional 2024</a>
                 </div>
             </div>
         </div>
@@ -259,6 +278,16 @@
             <iframe src="upload/histograma_genero_MultiUniprofissional_2024.html"></iframe>
         </div>
 
+        <div id="hist_idade_medica" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/histograma_idade_Médica_2024.html"></iframe>
+        </div>
+
+        <div id="hist_idade_multi" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/histograma_idade_MultiUniprofissional_2024.html"></iframe>
+        </div>
+
         <div id="mapa_estado_medica" class="iframe-container">
             <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
             <iframe src="upload/mapa_estado_Médica_2024.html"></iframe>
@@ -278,6 +307,27 @@
             <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
             <iframe src="upload/piramide_idadesexo_MultiUniprofissional_2024.html"></iframe>
         </div>
+
+        <div id="waffle_corraca_medica" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/waffle_corraca_Médica_2024.html"></iframe>
+        </div>
+
+        <div id="waffle_corraca_multi" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/waffle_corraca_MultiUniprofissional_2024.html"></iframe>
+        </div>
+
+        <div id="waffle_genero_medica" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/waffle_genero_Médica_2024.html"></iframe>
+        </div>
+
+        <div id="waffle_genero_multi" class="iframe-container">
+            <a href="#" class="back-button" onclick="showNavigation()">Voltar ao painel</a>
+            <iframe src="upload/waffle_genero_MultiUniprofissional_2024.html"></iframe>
+        </div>
+
     </div>
 
     <script>
