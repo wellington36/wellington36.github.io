@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visualização de Tabelas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>ENARE 2024 - Com/Sem Análise Curricular</h1>
+
+        <section class="table-block">
+            <h3> Resultados Gerais Com/Sem Análise Curricular</h3>
+            <i> A tabela apresenta os resultados gerais para dados médicos e multiprofissionais primeiro considerando Análise Curricular e depois sem Análise Curricular apresentando qual era a classificação anterior com Análise. Com os botões (40%, 50%, 60%, 70% e 80%) é possivel escolher a faixa de corte dos aprovados. </i>
+
+            <div class="buttons">
+                <button data-target="t1-v40">40%</button>
+                <button data-target="t1-v50" class="active">50%</button>
+                <button data-target="t1-v60">60%</button>
+                <button data-target="t1-v70">70%</button>
+                <button data-target="t1-v80">80%</button>
+            </div>
+
+        <div class="table-wrapper" id="t1-v40">
+            <table>
+                <tr>
+                    <th>Resultado</th>
+                    <th>Com AC</th>
+                    <th>Sem AC</th>
+                </tr>
+
+                <tr>
+                    <td>Aprovado</td>
+                    <td>57.921</td>
+                    <td>
+                        63.948<br>
+                        (57.863 + 6.085)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Reprovado</td>
+                    <td>169.518</td>
+                    <td>
+                        163.491<br>
+                        (58 + 163.433)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper show" id="t1-v50">
+            <table>
+                <tr>
+                    <th>Resultado</th>
+                    <th>Com AC</th>
+                    <th>Sem AC</th>
+                </tr>
+
+                <tr>
+                    <td>Aprovado</td>
+                    <td>57.921</td>
+                    <td>
+                        63.948<br>
+                        (57.863 + 6.085)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Reprovado</td>
+                    <td>169.518</td>
+                    <td>
+                        163.491<br>
+                        (58 + 163.433)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v60">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>7</td><td>8</td><td>9</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v70">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>10</td><td>11</td><td>12</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v80">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>13</td><td>14</td><td>15</td></tr>
+            </table>
+        </div>
+
+
+        </section>
+
+<div class="dual-column">
+
+    <!-- COLUNA MÉDICA -->
+    <div class="col">
+        <h2>Médica</h2>
+
+        <!-- ==== BLOCO 1 ==== -->
+        <section class="table-block">
+            <h3> Resultados Gerais Com/Sem Análise Curricular</h3>
+
+            <i> A tabela apresenta os resultados gerais para dados <b>médicos</b> primeiro considerando Análise Curricular e depois sem Análise Curricular apresentando qual era a classificação anterior com Análise. Com os botões (40%, 50%, 60%, 70% e 80%) é possivel escolher a faixa de corte dos aprovados. </i>
+
+
+            <div class="buttons">
+                <button data-target="t1-v40">40%</button>
+                <button data-target="t1-v50" class="active">50%</button>
+                <button data-target="t1-v60">60%</button>
+                <button data-target="t1-v70">70%</button>
+                <button data-target="t1-v80">80%</button>
+            </div>
+
+        <div class="table-wrapper" id="t1-v40">
+            <table>
+                <tr>
+                    <th>Resultado</th>
+                    <th>Com AC</th>
+                    <th>Sem AC</th>
+                </tr>
+
+                <tr>
+                    <td>Aprovado</td>
+                    <td>57.921</td>
+                    <td>
+                        63.948<br>
+                        (57.863 + 6.085)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Reprovado</td>
+                    <td>169.518</td>
+                    <td>
+                        163.491<br>
+                        (58 + 163.433)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper show" id="t1-v50">
+            <table>
+                <tr>
+                    <th>Resultado</th>
+                    <th>Com AC</th>
+                    <th>Sem AC</th>
+                </tr>
+
+                <tr>
+                    <td>Aprovado</td>
+                    <td>57.921</td>
+                    <td>
+                        63.948<br>
+                        (57.863 + 6.085)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Reprovado</td>
+                    <td>169.518</td>
+                    <td>
+                        163.491<br>
+                        (58 + 163.433)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v60">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>7</td><td>8</td><td>9</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v70">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>10</td><td>11</td><td>12</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v80">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>13</td><td>14</td><td>15</td></tr>
+            </table>
+        </div>
+
+
+        </section>
+
+        <section class="table-block">
+            <h3> Mudança no Ranking Pela Remoção da Análise Curricular </h3>
+
+            <i> A tabela mostra quantos candidatos subiram ou desceram nas suas classificações em relação aos demais candidatos com a remoção da Análise Curricular. </i>
+
+            <div class="buttons">
+                <button data-target="t1-v40">40%</button>
+                <button data-target="t1-v50" class="active">50%</button>
+                <button data-target="t1-v60">60%</button>
+                <button data-target="t1-v70">70%</button>
+                <button data-target="t1-v80">80%</button>
+            </div>
+
+        <div class="table-wrapper" id="t1-v40">
+            <table>
+                <tr>
+                    <th>Resultado</th>
+                    <th>Com AC</th>
+                    <th>Sem AC</th>
+                </tr>
+
+                <tr>
+                    <td>Aprovado</td>
+                    <td>57.921</td>
+                    <td>
+                        63.948<br>
+                        (57.863 + 6.085)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Reprovado</td>
+                    <td>169.518</td>
+                    <td>
+                        163.491<br>
+                        (58 + 163.433)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper show" id="t1-v50">
+            <table>
+                <tr><th>Mudança na Classificação </th><th>Candidatos</th></tr>
+                <tr><td>Subiram mais de 500 posições </td><td>100</td></tr>
+                <tr><td>Subiram entre 200 e 500 posições </td><td>100</td></tr>
+                <tr><td>Subiram entre 50 e 200 posições </td><td>100</td></tr>
+                <tr><td>Desceram entre 50 e 200 posições </td><td>100</td></tr>
+                <tr><td>Desceram entre 200 e 500 posições </td><td>100</td></tr>
+                <tr><td>Desceram mais de 500 posições </td><td>100</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v60">
+            <table>
+                <tr><th>Mudança na Classificação </th><th>B</th></tr>
+                <tr><td>Subiram mais de 500 posições </td><td>8</td></tr>
+                <tr><td>Subiram entre 200 e 500 posições </td><td>8</td></tr>
+                <tr><td>Subiram entre 50 e 200 posições </td><td>8</td></tr>
+                <tr><td>Desceram entre 50 e 200 posições </td><td>8</td></tr>
+                <tr><td>Desceram entre 200 e 500 posições </td><td>8</td></tr>
+                <tr><td>Desceram mais de 500 posições </td><td>8</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v70">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>10</td><td>11</td><td>12</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v80">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>13</td><td>14</td><td>15</td></tr>
+            </table>
+        </div>
+
+
+        </section>
+
+    </div>
+
+    <!-- COLUNA MULTIPROFISSIONAIS -->
+    <div class="col">
+        <h2>Multiprofissionais</h2>
+
+        <!-- ==== BLOCO 2 ==== -->
+        <section class="table-block">
+            <h3> Resultados Gerais Com/Sem Análise Curricular</h3>
+
+            <i> A tabela apresenta os resultados gerais para dados <b>multiprofissionais</b> primeiro considerando Análise Curricular e depois sem Análise Curricular apresentando qual era a classificação anterior com Análise. Com os botões (40%, 50%, 60%, 70% e 80%) é possivel escolher a faixa de corte dos aprovados. </i>
+
+
+            <div class="buttons">
+                <button data-target="t1-v40">40%</button>
+                <button data-target="t1-v50" class="active">50%</button>
+                <button data-target="t1-v60">60%</button>
+                <button data-target="t1-v70">70%</button>
+                <button data-target="t1-v80">80%</button>
+            </div>
+
+        <div class="table-wrapper" id="t1-v40">
+            <table>
+                <tr>
+                    <th>Resultado</th>
+                    <th>Com AC</th>
+                    <th>Sem AC</th>
+                </tr>
+
+                <tr>
+                    <td>Aprovado</td>
+                    <td>57.921</td>
+                    <td>
+                        63.948<br>
+                        (57.863 + 6.085)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Reprovado</td>
+                    <td>169.518</td>
+                    <td>
+                        163.491<br>
+                        (58 + 163.433)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper show" id="t1-v50">
+            <table>
+                <tr>
+                    <th>Resultado</th>
+                    <th>Com AC</th>
+                    <th>Sem AC</th>
+                </tr>
+
+                <tr>
+                    <td>Aprovado</td>
+                    <td>57.921</td>
+                    <td>
+                        63.948<br>
+                        (57.863 + 6.085)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Reprovado</td>
+                    <td>169.518</td>
+                    <td>
+                        163.491<br>
+                        (58 + 163.433)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v60">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>7</td><td>8</td><td>9</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v70">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>10</td><td>11</td><td>12</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v80">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>13</td><td>14</td><td>15</td></tr>
+            </table>
+        </div>
+
+
+        </section>
+
+
+                <section class="table-block">
+            <h3> Mudança no Ranking Pela Remoção da Análise Curricular </h3>
+
+            <i> A tabela mostra quantos candidatos subiram ou desceram nas suas classificações em relação aos demais candidatos com a remoção da Análise Curricular. </i>
+
+            <div class="buttons">
+                <button data-target="t1-v40">40%</button>
+                <button data-target="t1-v50" class="active">50%</button>
+                <button data-target="t1-v60">60%</button>
+                <button data-target="t1-v70">70%</button>
+                <button data-target="t1-v80">80%</button>
+            </div>
+
+        <div class="table-wrapper" id="t1-v40">
+            <table>
+                <tr>
+                    <th>Resultado</th>
+                    <th>Com AC</th>
+                    <th>Sem AC</th>
+                </tr>
+
+                <tr>
+                    <td>Aprovado</td>
+                    <td>57.921</td>
+                    <td>
+                        63.948<br>
+                        (57.863 + 6.085)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Reprovado</td>
+                    <td>169.518</td>
+                    <td>
+                        163.491<br>
+                        (58 + 163.433)<br>
+                        (Aprovado c/AC + Reprovado c/AC)
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper show" id="t2-v50">
+            <table>
+                <tr><th>Mudança na Classificação </th><th>Candidatos</th></tr>
+                <tr><td>Subiram mais de 500 posições </td><td>100</td></tr>
+                <tr><td>Subiram entre 200 e 500 posições </td><td>100</td></tr>
+                <tr><td>Subiram entre 50 e 200 posições </td><td>100</td></tr>
+                <tr><td>Desceram entre 50 e 200 posições </td><td>100</td></tr>
+                <tr><td>Desceram entre 200 e 500 posições </td><td>100</td></tr>
+                <tr><td>Desceram mais de 500 posições </td><td>100</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t2-v60">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>7</td><td>8</td><td>9</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v70">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>10</td><td>11</td><td>12</td></tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper" id="t1-v80">
+            <table>
+                <tr><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>13</td><td>14</td><td>15</td></tr>
+            </table>
+        </div>
+
+
+        </section>
+
+    </div>
+
+</div>
+
+<script>
+document.querySelectorAll(".buttons button").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const group = btn.parentElement;
+        group.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const block = btn.closest(".table-block");
+        block.querySelectorAll(".table-wrapper").forEach(t => t.classList.remove("show"));
+
+        const target = document.querySelector("#" + btn.dataset.target);
+        target.classList.add("show");
+    });
+});
+</script>
+
+</body>
+</html>
