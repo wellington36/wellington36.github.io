@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inscritos Vagas Afirmativas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="logo"><span class="mark"><b>E</b>nare</span><span class="year">2026</span></div>
+</header>
+
+<main class="page">
+  <div class="actions">
+    <button class="btn-excel" id="btnExcel" type="button">Excel</button>
+  </div>
+
+  <section class="header">
+    <div class="card edition">
+      <div class="logo"><span class="mark"><b>E</b>nare</span></div>
+      <strong>Edição<br>2026/2027</strong>
+    </div>
+    <div class="card title"><h1>Inscritos Vagas Afirmativas</h1></div>
+  </section>
+
+  <div class="toolbar">
+    <div class="who"><span class="ico">🧑‍⚕️</span>|<span class="ico f">👩‍⚕️</span> Médicos</div>
+    <label class="filter">Tipo de Residência
+      <input class="search" id="search" type="search" placeholder="Selecione..." autocomplete="off">
+    </label>
+  </div>
+
+  <section class="card table-card">
+    <h2>Inscritos por Programa de Residência</h2>
+    <div class="table-wrap">
+      <table id="tabela">
+        <thead>
+          <tr>
+            <th data-key="programa">Programa</th>
+            <th data-key="ppp">PPP</th>
+            <th data-key="pcd">PCD</th>
+            <th data-key="indigenas">INDÍGENAS</th>
+            <th data-key="quilombolas">QUILOMBOLAS</th>
+            <th data-key="total">TOTAL</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script>
+// === SUBSTITUA ESTES DADOS PELOS DA SUA PLANILHA ===
+const dados = [
+  {programa:"Programa A", ppp:0, pcd:0, indigenas:0, quilombolas:0, total:0},
+  {programa:"Programa B", ppp:1, pcd:0, indigenas:1, quilombolas:1, total:3},
+  {programa:"Programa C", ppp:2, pcd:0, indigenas:0, quilombolas:0, total:2},
+  {programa:"Programa D", ppp:3, pcd:0, indigenas:0, quilombolas:0, total:3}
+];
+
+const colunas = ["programa","ppp","pcd","indigenas","quilombolas","total"];
+const cabecalhos = ["Programa","PPP","PCD","INDÍGENAS","QUILOMBOLAS","TOTAL"];
+const tbody = document.querySelector("#tabela tbody");
+const busca = document.getElementById("search");
+const fmt = n => n.toLocaleString("pt-BR");
+const norm = s => s.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+
+let ordem = {key:"programa", dir:1};
+
+function visiveis(){
+  const q = norm(busca.value.trim());
+  return dados
+    .filter(d => norm(d.programa).includes(q))
+    .sort((a,b) => {
+      const x=a[ordem.key], y=b[ordem.key];
+      return (typeof x==="string" ? x.localeCompare(y,"pt-BR") : x-y) * ordem.dir;
+    });
+}
+
+function render(){
+  const linhas = visiveis();
+  tbody.innerHTML = linhas.length
+    ? linhas.map(d => `<tr><td>${d.programa}</td>${colunas.slice(1).map(c=>`<td>${fmt(d[c])}</td>`).join("")}</tr>`).join("")
+    : `<tr class="empty"><td colspan="6">Nenhum programa encontrado.</td></tr>`;
+  document.querySelectorAll("thead th").forEach(th => {
+    th.classList.toggle("asc", th.dataset.key===ordem.key && ordem.dir===1);
+    th.classList.toggle("desc", th.dataset.key===ordem.key && ordem.dir===-1);
+  });
+}
+
+busca.addEventListener("input", render);
+document.querySelectorAll("thead th").forEach(th => th.addEventListener("click", () => {
+  const k = th.dataset.key;
+  ordem = {key:k, dir: ordem.key===k ? -ordem.dir : 1};
+  render();
+}));
+
+// Download do Excel (gera o .xlsx a partir dos dados, respeitando a busca ativa)
+document.getElementById("btnExcel").addEventListener("click", () => {
+  const linhas = visiveis().map(d => Object.fromEntries(colunas.map((c,i)=>[cabecalhos[i], d[c]])));
+  const ws = XLSX.utils.json_to_sheet(linhas);
+  ws["!cols"] = [{wch:45},{wch:8},{wch:8},{wch:12},{wch:14},{wch:10}];
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, "Inscritos");
+  XLSX.writeFile(wb, "inscritos_vagas_afirmativas.xlsx");
+});
+
+render();
+</script>
+</body>
+</html>
